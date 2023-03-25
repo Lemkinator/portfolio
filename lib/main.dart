@@ -1,72 +1,43 @@
-import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
+import 'dart:io';
 
-import 'constants.dart';
-import 'home.dart';
+import 'package:flutter/foundation.dart';
+import 'package:flutter/material.dart';
+import 'package:url_strategy/url_strategy.dart';
+import 'package:window_size/window_size.dart';
+
+import 'src/app.dart';
 
 void main() {
-  runApp(
-    const App(),
-  );
+  // Use package:url_strategy until this pull request is released:
+  // https://github.com/flutter/flutter/pull/77103
+
+  // Use to setHashUrlStrategy() to use "/#/" in the address bar (default). Use
+  // setPathUrlStrategy() to use the path. You may need to configure your web
+  // server to redirect all paths to index.html.
+  //
+  // On mobile platforms, both functions are no-ops.
+  setHashUrlStrategy();
+  // setPathUrlStrategy();
+
+  setupWindow();
+  runApp(const Home());
 }
 
-class App extends StatefulWidget {
-  const App({super.key});
+const double windowWidth = 480;
+const double windowHeight = 854;
 
-  @override
-  State<App> createState() => _AppState();
-}
-
-class _AppState extends State<App> {
-  bool useMaterial3 = true;
-  ThemeMode themeMode = ThemeMode.system;
-  ColorSeed colorSelected = ColorSeed.baseColor;
-
-  bool get useLightMode {
-    switch (themeMode) {
-      case ThemeMode.system:
-        return SchedulerBinding.instance.window.platformBrightness == Brightness.light;
-      case ThemeMode.light:
-        return true;
-      case ThemeMode.dark:
-        return false;
-    }
-  }
-
-  void handleBrightnessChange(bool useLightMode) {
-    setState(() {
-      themeMode = useLightMode ? ThemeMode.light : ThemeMode.dark;
-    });
-  }
-
-  void handleColorSelect(int value) {
-    setState(() {
-      colorSelected = ColorSeed.values[value];
-    });
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Leonard Lemke',
-      themeMode: themeMode,
-      theme: ThemeData(
-        colorSchemeSeed: colorSelected.color,
-        useMaterial3: useMaterial3,
-        brightness: Brightness.light,
-      ),
-      darkTheme: ThemeData(
-        colorSchemeSeed: colorSelected.color,
-        useMaterial3: useMaterial3,
-        brightness: Brightness.dark,
-      ),
-      home: Home(
-        useLightMode: useLightMode,
-        colorSelected: colorSelected,
-        handleBrightnessChange: handleBrightnessChange,
-        handleColorSelect: handleColorSelect,
-      ),
-    );
+void setupWindow() {
+  if (!kIsWeb && (Platform.isWindows || Platform.isLinux || Platform.isMacOS)) {
+    WidgetsFlutterBinding.ensureInitialized();
+    setWindowTitle('Leonard Lemke');
+    /*setWindowMinSize(const Size(windowWidth, windowHeight));
+    setWindowMaxSize(const Size(windowWidth, windowHeight));
+    getCurrentScreen().then((screen) {
+      setWindowFrame(Rect.fromCenter(
+        center: screen!.frame.center,
+        width: windowWidth,
+        height: windowHeight,
+      ));
+    });*/
   }
 }

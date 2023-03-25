@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/projects_screen.dart';
-
-import 'about_screen.dart';
-import 'constants.dart';
+import 'constants_old.dart';
 
 class Home extends StatefulWidget {
   const Home({
@@ -89,18 +86,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
   }
 
   Widget createScreenFor(ScreenSelected screenSelected) {
-    switch (screenSelected) {
-      case ScreenSelected.projects:
-        return const ProjectsScreen();
-      case ScreenSelected.about:
-        return AboutScreen();
-      case ScreenSelected.apps:
-        return const ProjectsScreen(screenSelected: ScreenSelected.apps);
-      case ScreenSelected.media:
-        return const ProjectsScreen(screenSelected: ScreenSelected.media);
-      default:
-        return const ProjectsScreen();
-    }
+    return Container();
   }
 
   PreferredSizeWidget createAppBar() {
