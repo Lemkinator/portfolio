@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
 class NAKBuchScreen extends StatelessWidget {
-  const NAKBuchScreen({super.key,});
+  const NAKBuchScreen({
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -11,16 +13,18 @@ class NAKBuchScreen extends StatelessWidget {
       ),
       body: Center(
         child: Text(
-              'NAK Buch',
-              style: Theme.of(context).textTheme.headlineMedium,
-            ),
+          'NAK Buch',
+          style: Theme.of(context).textTheme.headlineMedium,
         ),
+      ),
     );
   }
 }
 
 class NAKBuchPrivacyPolicyScreen extends StatelessWidget {
-  const NAKBuchPrivacyPolicyScreen({super.key,});
+  const NAKBuchPrivacyPolicyScreen({
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -30,10 +34,10 @@ class NAKBuchPrivacyPolicyScreen extends StatelessWidget {
       ),
       body: Center(
         child: Text(
-              'NAK Buch Privacy Policy',
-              style: Theme.of(context).textTheme.headlineMedium,
-            ),
+          'NAK Buch Privacy Policy',
+          style: Theme.of(context).textTheme.headlineMedium,
         ),
+      ),
     );
   }
 }

@@ -3,7 +3,7 @@ import 'package:flutter/scheduler.dart';
 
 import 'routing.dart';
 import 'screens/navigator.dart';
-import 'data/constants.dart';
+import 'data.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -75,6 +75,10 @@ class _HomeState extends State<Home> {
       navigatorKey: _navigatorKey,
       builder: (context) => HomeNavigator(
         navigatorKey: _navigatorKey,
+        useLightMode: useLightMode,
+        colorSelected: colorSelected,
+        handleBrightnessChange: handleBrightnessChange,
+        handleColorSelect: handleColorSelect,
       ),
     );
 

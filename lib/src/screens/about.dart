@@ -4,8 +4,6 @@ import 'package:flutter/material.dart';
 class AboutScreen extends StatelessWidget {
   AboutScreen({super.key});
 
-  final String title = 'About';
-
   static const List<String> fileNames = [
     'images/about/me1.jpg',
     'images/about/me2.jpg',
@@ -21,9 +19,6 @@ class AboutScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => Scaffold(
-        appBar: AppBar(
-          title: Text(title),
-        ),
         body: CustomScrollView(
           slivers: [
             SliverList(

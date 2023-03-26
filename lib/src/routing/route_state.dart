@@ -26,8 +26,7 @@ class RouteState extends ChangeNotifier {
   }
 
   Future<void> go(String route) async {
-    this.route =
-        await _parser.parseRouteInformation(RouteInformation(location: route));
+    this.route = await _parser.parseRouteInformation(RouteInformation(location: route));
   }
 }
 
@@ -39,6 +38,5 @@ class RouteStateScope extends InheritedNotifier<RouteState> {
     super.key,
   });
 
-  static RouteState of(BuildContext context) =>
-      context.dependOnInheritedWidgetOfExactType<RouteStateScope>()!.notifier!;
+  static RouteState of(BuildContext context) => context.dependOnInheritedWidgetOfExactType<RouteStateScope>()!.notifier!;
 }

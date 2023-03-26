@@ -4,7 +4,6 @@ import '../routing.dart';
 import 'about.dart';
 import '../widgets/fade_transition_page.dart';
 import 'projects.dart';
-import 'scaffold.dart';
 
 /// Displays the contents of the body of [HomeScaffold]
 class HomeScaffoldBody extends StatelessWidget {

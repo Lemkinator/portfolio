@@ -1,22 +1,26 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/src/screens/nakbuch.dart';
-import 'package:portfolio/src/screens/studiportal.dart';
-import 'package:portfolio/src/screens/sudoku.dart';
-
+import 'home.dart';
+import '../data/constants.dart';
 import '../routing.dart';
 import '../widgets/fade_transition_page.dart';
-import 'accelerate.dart';
-import 'light_utopia.dart';
-import 'scaffold.dart';
+import '../screens.dart';
 
 /// Builds the top-level navigator for the app. The pages to display are based
 /// on the `routeState` that was parsed by the TemplateRouteParser.
 class HomeNavigator extends StatefulWidget {
   final GlobalKey<NavigatorState> navigatorKey;
+  final bool useLightMode;
+  final ColorSeed colorSelected;
+  final void Function(bool) handleBrightnessChange;
+  final void Function(int) handleColorSelect;
 
   const HomeNavigator({
-    required this.navigatorKey,
     super.key,
+    required this.navigatorKey,
+    required this.useLightMode,
+    required this.colorSelected,
+    required this.handleBrightnessChange,
+    required this.handleColorSelect,
   });
 
   @override
@@ -107,7 +111,12 @@ class _HomeNavigatorState extends State<HomeNavigator> {
           // Display the app
           FadeTransitionPage<void>(
             key: _scaffoldKey,
-            child: const HomeScaffold(),
+            child: HomeScaffold(
+                useLightMode: widget.useLightMode,
+                colorSelected: widget.colorSelected,
+                handleBrightnessChange: widget.handleBrightnessChange,
+                handleColorSelect: widget.handleColorSelect,
+            ),
           ),
           // Add an additional page to the stack if the user is viewing an app or media
           if (appScreen != null)

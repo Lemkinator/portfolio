@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
 class LightUtopiaScreen extends StatelessWidget {
-  const LightUtopiaScreen({super.key,});
+  const LightUtopiaScreen({
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -11,10 +13,10 @@ class LightUtopiaScreen extends StatelessWidget {
       ),
       body: Center(
         child: Text(
-              'Light Utopia',
-              style: Theme.of(context).textTheme.headlineMedium,
-            ),
+          'Light Utopia',
+          style: Theme.of(context).textTheme.headlineMedium,
         ),
+      ),
     );
   }
 }

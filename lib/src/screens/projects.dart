@@ -6,7 +6,8 @@ import '../routing.dart';
 
 class ProjectsScreen extends StatefulWidget {
   const ProjectsScreen({
-    super.key, this.category,
+    super.key,
+    this.category,
   });
 
   final String? category;
@@ -16,29 +17,21 @@ class ProjectsScreen extends StatefulWidget {
 }
 
 class _ProjectsScreenState extends State<ProjectsScreen> with SingleTickerProviderStateMixin {
-
-
   @override
   Widget build(BuildContext context) {
     var projects = libraryInstance.allProjects;
-    var title = 'Projects';
     if (widget.category == 'apps') {
-      title = 'Apps';
       projects = libraryInstance.apps;
     } else if (widget.category == 'media') {
-      title = 'Media';
       projects = libraryInstance.media;
     }
 
     return Scaffold(
-        appBar: AppBar(
-          title: Text(title),
-        ),
-        body: ProjectGrid(
-          projects: projects,
-          onTap: _handleAppTapped,
-        ),
-      );
+      body: ProjectGrid(
+        projects: projects,
+        onTap: _handleAppTapped,
+      ),
+    );
   }
 
   RouteState get _routeState => RouteStateScope.of(context);

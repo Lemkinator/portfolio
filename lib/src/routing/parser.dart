@@ -56,6 +56,5 @@ class TemplateRouteParser extends RouteInformationParser<ParsedRoute> {
   }
 
   @override
-  RouteInformation restoreRouteInformation(ParsedRoute configuration) =>
-      RouteInformation(location: configuration.path);
+  RouteInformation restoreRouteInformation(ParsedRoute configuration) => RouteInformation(location: configuration.path);
 }

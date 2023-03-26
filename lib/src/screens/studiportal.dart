@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
 class StudiportalScreen extends StatelessWidget {
-  const StudiportalScreen({super.key,});
+  const StudiportalScreen({
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -11,16 +13,18 @@ class StudiportalScreen extends StatelessWidget {
       ),
       body: Center(
         child: Text(
-              'Studiportal',
-              style: Theme.of(context).textTheme.headlineMedium,
-            ),
+          'Studiportal',
+          style: Theme.of(context).textTheme.headlineMedium,
         ),
+      ),
     );
   }
 }
 
 class StudiportalPrivacyPolicyScreen extends StatelessWidget {
-  const StudiportalPrivacyPolicyScreen({super.key,});
+  const StudiportalPrivacyPolicyScreen({
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -30,10 +34,10 @@ class StudiportalPrivacyPolicyScreen extends StatelessWidget {
       ),
       body: Center(
         child: Text(
-              'Studiportal Privacy Policy',
-              style: Theme.of(context).textTheme.headlineMedium,
-            ),
+          'Studiportal Privacy Policy',
+          style: Theme.of(context).textTheme.headlineMedium,
         ),
+      ),
     );
   }
 }

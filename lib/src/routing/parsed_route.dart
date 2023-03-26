@@ -19,8 +19,7 @@ class ParsedRoute {
 
   static const _mapEquality = MapEquality<String, String>();
 
-  ParsedRoute(
-      this.path, this.pathTemplate, this.parameters, this.queryParameters);
+  ParsedRoute(this.path, this.pathTemplate, this.parameters, this.queryParameters);
 
   @override
   bool operator ==(Object other) =>

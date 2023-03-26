@@ -40,6 +40,7 @@ dependencies:
   url_strategy: ^0.2.0
   card_swiper: ^2.0.1
   youtube_player_iframe: ^4.0.4
+  adaptive_breakpoints: ^0.1.6
   window_size:
     git:
       url: https://github.com/google/flutter-desktop-embedding.git

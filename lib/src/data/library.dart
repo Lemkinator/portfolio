@@ -2,24 +2,6 @@ import 'package:portfolio/src/data.dart';
 
 final libraryInstance = Library()
   ..addProject(
-    id: 'nakbuch',
-    category: 'apps',
-    title: 'NAK Buch',
-    description: 'Die neue nicht-offizielle Liederbuch-App der Neuapostolischen Kirche.',
-    image: 'images/apps/nakbuch/app_icon.jpg',
-    tags: const ['Apps', 'OneUI'],
-    date: DateTime(2021, 11),
-  )
-  ..addProject(
-    id: 'studiportal',
-    category: 'apps',
-    title: 'Studiportal',
-    description: 'Die neue Studiportal-App mit OneUI-Design.',
-    image: 'images/apps/studiportal/app_icon.png',
-    tags: const ['Apps', 'OneUI'],
-    date: DateTime(2022, 7),
-  )
-  ..addProject(
     id: 'sudoku',
     category: 'apps',
     title: 'Sudoku',
@@ -36,6 +18,24 @@ final libraryInstance = Library()
     image: 'images/media/light-utopia/light-utopia.jpg',
     tags: const ['Media', 'FPV', 'RS3'],
     date: DateTime(2022, 8, 12),
+  )
+  ..addProject(
+    id: 'studiportal',
+    category: 'apps',
+    title: 'Studiportal',
+    description: 'Die neue Studiportal-App mit OneUI-Design.',
+    image: 'images/apps/studiportal/app_icon.png',
+    tags: const ['Apps', 'OneUI'],
+    date: DateTime(2022, 7),
+  )
+  ..addProject(
+    id: 'nakbuch',
+    category: 'apps',
+    title: 'NAK Buch',
+    description: 'Die neue nicht-offizielle Liederbuch-App der Neuapostolischen Kirche.',
+    image: 'images/apps/nakbuch/app_icon.jpg',
+    tags: const ['Apps', 'OneUI'],
+    date: DateTime(2021, 11),
   )
   ..addProject(
     id: 'accelerate',
