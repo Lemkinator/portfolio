@@ -1,49 +1,51 @@
 import 'package:portfolio/src/data.dart';
 
+import '../localization.dart';
+
 final libraryInstance = Library()
   ..addProject(
     id: 'sudoku',
     category: 'apps',
-    title: 'Sudoku',
-    description: 'Eine Sudoku App im schönen OneUI-Design.',
+    title: S.current.sudoku,
+    description: S.current.sudokuDescription,
     image: 'images/apps/sudoku/app_icon.png',
-    tags: const ['Apps', 'OneUI', 'Spiel'],
+    tags: [S.current.apps, S.current.oneui, S.current.game],
     date: DateTime(2022, 8),
   )
   ..addProject(
     id: 'light-utopia',
     category: 'media',
-    title: 'Light Utopia',
-    description: 'Cinematic / Freestyle FPV',
+    title: S.current.lightUtopia,
+    description: S.current.cinematicFreestyleFpv,
     image: 'images/media/light-utopia/light-utopia.jpg',
-    tags: const ['Media', 'FPV', 'RS3'],
+    tags: [S.current.media, 'FPV', 'RS3'],
     date: DateTime(2022, 8, 12),
   )
   ..addProject(
     id: 'studiportal',
     category: 'apps',
-    title: 'Studiportal',
-    description: 'Die neue Studiportal-App mit OneUI-Design.',
+    title: S.current.studiportal,
+    description: S.current.studiportalDescription,
     image: 'images/apps/studiportal/app_icon.png',
-    tags: const ['Apps', 'OneUI'],
+    tags: [S.current.apps, S.current.oneui],
     date: DateTime(2022, 7),
   )
   ..addProject(
     id: 'nakbuch',
     category: 'apps',
-    title: 'NAK Buch',
-    description: 'Die neue nicht-offizielle Liederbuch-App der Neuapostolischen Kirche.',
+    title: S.current.nakBuch,
+    description: S.current.nakBuchDescription,
     image: 'images/apps/nakbuch/app_icon.jpg',
-    tags: const ['Apps', 'OneUI'],
+    tags: [S.current.apps, S.current.oneui],
     date: DateTime(2021, 11),
   )
   ..addProject(
     id: 'accelerate',
     category: 'media',
-    title: 'Accelerate',
-    description: 'Cinematic / Freestyle FPV',
+    title: S.current.accelerate,
+    description: S.current.cinematicFreestyleFpv,
     image: 'images/media/accelerate/accelerate2.jpg',
-    tags: const ['Media', 'FPV', 'RS3'],
+    tags: [S.current.media, 'FPV', 'RS3'],
     date: DateTime(2021, 5, 7),
   );
 

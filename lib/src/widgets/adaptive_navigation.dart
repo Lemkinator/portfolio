@@ -9,9 +9,6 @@ enum NavigationType {
   extendedRail,
 }
 
-/// A widget that adapts to the current display size, displaying a [Drawer],
-/// [NavigationRail], or [BottomNavigationBar]. Navigation destinations are
-/// defined in the [destinations] parameter.
 class AdaptiveNavigationScaffold extends StatelessWidget {
   const AdaptiveNavigationScaffold({
     Key? key,

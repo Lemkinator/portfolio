@@ -23,7 +23,7 @@ const RESOURCES = {
 "assets/images/media/drone8.jpg": "778b3bf5626b5fa1d2b64dc01fc7a0ec",
 "assets/images/media/evoque_v2.jpg": "298475e78b53766b057f4437195846e5",
 "assets/images/media/light-utopia/light-utopia.jpg": "b82478e9ebb642e482f6e83d7d115e3b",
-"assets/NOTICES": "ad407d025b077820da6af9606f89755a",
+"assets/NOTICES": "0c3756371d3fcd1c4f129013608efe43",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "6d342eb68f170c97609e9da345464e5e",
 "assets/packages/youtube_player_iframe/assets/player.html": "dc7a0426386dc6fd0e4187079900aea8",
 "canvaskit/canvaskit.js": "97937cb4c2c2073c968525a3e08c86a3",
@@ -37,9 +37,9 @@ const RESOURCES = {
 "icons/icon-512.png": "cdd688288d8e223bfc8c775c6f80303c",
 "icons/Icon-maskable-192.png": "a294f388689c3c02cec94f7ba18c7012",
 "icons/Icon-maskable-512.png": "cdd688288d8e223bfc8c775c6f80303c",
-"index.html": "2cc2b2188a1a0a5dd4cd6e6a9cf9549d",
-"/": "2cc2b2188a1a0a5dd4cd6e6a9cf9549d",
-"main.dart.js": "d003bc5c21793659ff30fa0d7f8eb792",
+"index.html": "9ea1c1a8ee887cc7a2a136d68f9017f0",
+"/": "9ea1c1a8ee887cc7a2a136d68f9017f0",
+"main.dart.js": "0b0cc1190be280463362f6cef8e8a71d",
 "manifest.json": "383bcada50b6d5b56736595c7588470c",
 "version.json": "009c9e65172e010890f7f65fde438006"
 };

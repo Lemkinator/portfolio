@@ -1,0 +1,55 @@
+{
+  "@@locale": "en",
+  "helloWorld": "Hello World!",
+  "@helloWorld": {
+    "description": "The conventional newborn programmer greeting"
+  },
+  "hello": "Hello {userName}",
+  "@hello": {
+    "description": "A message with a single parameter",
+    "placeholders": {
+      "userName": {
+        "type": "String",
+        "example": "Bob"
+      }
+    }
+  },
+  "explore": "Explore",
+  "about": "About",
+  "apps": "Apps",
+  "media": "Media",
+  "colorBaseline": "M3 Baseline",
+  "colorIndigo": "Indigo",
+  "colorBlue": "Blue",
+  "colorTeal": "Teal",
+  "colorGreen": "Green",
+  "colorYellow": "Yellow",
+  "colorOrange": "Orange",
+  "colorDeepOrange": "Deep Orange",
+  "colorPink": "Pink",
+  "selectASeedColor": "Select a seed color",
+  "toggleLight": "Toggle light",
+  "light": "Light",
+  "mySlogan": "Those looking for quick success should not program, but chop wood.",
+  "myJob": "Study Plus Mathem.-Tech. Softwaredeveloper",
+  "myDescription": "Hello, my name is Leonard. Besides my passion for technology, smartphones, Android and computer games, I like to program apps for Android in OneUI style or edit videos that I record with my racing drone.",
+  "apprenticeship": "Apprenticeship",
+  "apprenticeshipDate": "September 2019 - July 2021",
+  "apprenticeshipJob": "Mathem. tech. Softwaredeveloper",
+  "apprenticeshipLocations": "Kaufmännischen und Hauswirtschaftlichen Schulen Donaueschingen / Continental AG",
+  "study": "Study: Bachelor of Science",
+  "studyDate": "September 2019 - February 2024",
+  "studySpecialization": "General Computer Science (Specialization Software Engineering)",
+  "studyLocations": "Furtwangen University (HFU) / Continental AG",
+  "sudoku": "Sudoku",
+  "sudokuDescription": "A Sudoku app with OneUI-Design.",
+  "lightUtopia": "Light Utopia",
+  "cinematicFreestyleFpv": "Cinematic / Freestyle FPV",
+  "studiportal": "Studiportal",
+  "studiportalDescription": "The new Studiportal app with OneUI-Design.",
+  "nakBuch": "NAK Buch",
+  "nakBuchDescription": "The new non-official songbook app of the New Apostolic Church.",
+  "accelerate": "Accelerate",
+  "oneui": "OneUI",
+  "game": "Game"
+}

@@ -1,5 +1,7 @@
-import 'package:card_swiper/card_swiper.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_carousel_slider/carousel_slider.dart';
+
+import '../localization.dart';
 
 class AboutScreen extends StatelessWidget {
   AboutScreen({super.key});
@@ -12,36 +14,59 @@ class AboutScreen extends StatelessWidget {
 
   final List<Widget> images = fileNames
       .map((file) => ClipRRect(
-            borderRadius: const BorderRadius.all(Radius.circular(16.0)),
+            borderRadius: const BorderRadius.all(Radius.circular(16)),
             child: Image.asset(file, fit: BoxFit.cover),
           ))
       .toList();
 
   @override
-  Widget build(BuildContext context) => Scaffold(
-        body: CustomScrollView(
-          slivers: [
-            SliverList(
-              delegate: SliverChildListDelegate(<Widget>[
-                Padding(
-                  padding: const EdgeInsets.fromLTRB(16.0, 20, 16.0, 0),
-                  child: Text(
-                    'Study Plus Mathem.-Tech. Softwaredeveloper',
-                    style: Theme.of(context).textTheme.titleLarge,
+  Widget build(BuildContext context) {
+    final textTheme = Theme.of(context).textTheme;
+    final titleLarge = textTheme.titleLarge?.copyWith(
+      color: Theme.of(context).colorScheme.secondary,
+    );
+    return Scaffold(
+      body: CustomScrollView(
+        slivers: [
+          SliverList(
+            delegate: SliverChildListDelegate(<Widget>[
+              Padding(
+                padding: const EdgeInsets.fromLTRB(16, 20, 16, 0),
+                child: Text(
+                  S.of(context).myJob,
+                  style: titleLarge,
+                ),
+              ),
+              const SizedBox(height: 10),
+              Padding(
+                padding: const EdgeInsets.fromLTRB(16, 8, 16, 0),
+                child: Text(
+                  S.of(context).myDescription,
+                  style: textTheme.bodyLarge,
+                ),
+              ),
+              const SizedBox(height: 10),
+              Padding(
+                padding: const EdgeInsets.all(16),
+                child: Align(
+                  alignment: Alignment.centerLeft,
+                  child: ConstrainedBox(
+                    constraints: const BoxConstraints(maxWidth: 512),
+                    child: AspectRatio(
+                      aspectRatio: 1,
+                      child: CarouselSlider.builder(
+                          unlimitedMode: true,
+                          slideBuilder: (index) => images[index],
+                          slideTransform: const CubeTransform(),
+                          slideIndicator: CircularSlideIndicator(
+                            padding: const EdgeInsets.only(bottom: 16),
+                          ),
+                          itemCount: images.length),
+                    ),
                   ),
                 ),
-                const SizedBox(height: 10),
-                Padding(
-                  padding: const EdgeInsets.fromLTRB(16.0, 8.0, 16.0, 0),
-                  child: Text(
-                    'Hallo, mein Name ist Leonard. Neben meiner Leidenschaft für Technik, Smartphones, Android und Computerspiele, programmiere ich gerne Apps für Android im OneUI-Stil oder bearbeite Videos, die ich mit meiner Racing-Drohne aufnehme.',
-                    style: Theme.of(context).textTheme.bodyLarge,
-                  ),
-                ),
-                const SizedBox(height: 10),
-                SizedBox(
-                  height: 512,
-                  child: Swiper(
+              ),
+              /*Swiper(
                     itemBuilder: (BuildContext context, int index) {
                       return images[index];
                     },
@@ -52,75 +77,74 @@ class AboutScreen extends StatelessWidget {
                     pagination: const SwiperPagination(),
                     control: const SwiperControl(),
                   ),
+                ),*/
+              Padding(
+                padding: const EdgeInsets.fromLTRB(16, 10, 16, 0),
+                child: Text(
+                  S.of(context).mySlogan,
+                  style: textTheme.bodyLarge,
                 ),
-                const SizedBox(height: 10),
-                Padding(
-                  padding: const EdgeInsets.fromLTRB(16.0, 30.0, 16.0, 0),
-                  child: Text(
-                    'Ausbildung',
-                    style: Theme.of(context).textTheme.titleLarge,
-                  ),
+              ),
+              Padding(
+                padding: const EdgeInsets.fromLTRB(16, 40, 16, 0),
+                child: Text(
+                  S.of(context).apprenticeship,
+                  style: titleLarge,
                 ),
-                const SizedBox(height: 10),
-                Padding(
-                  padding: const EdgeInsets.fromLTRB(16.0, 8.0, 16.0, 0),
-                  child: Text(
-                    'September 2019 - Juli 2021',
-                    style: Theme.of(context).textTheme.bodySmall,
-                  ),
+              ),
+              Padding(
+                padding: const EdgeInsets.fromLTRB(16, 10, 16, 0),
+                child: Text(
+                  S.of(context).apprenticeshipDate,
+                  style: textTheme.bodySmall,
                 ),
-                const SizedBox(height: 10),
-                Padding(
-                  padding: const EdgeInsets.fromLTRB(16.0, 8.0, 16.0, 0),
-                  child: Text(
-                    'Mathem. tech. Softwaredeveloper',
-                    style: Theme.of(context).textTheme.bodyLarge,
-                  ),
+              ),
+              Padding(
+                padding: const EdgeInsets.fromLTRB(16, 15, 16, 0),
+                child: Text(
+                  S.of(context).apprenticeshipJob,
+                  style: textTheme.bodyLarge,
                 ),
-                const SizedBox(height: 10),
-                Padding(
-                  padding: const EdgeInsets.fromLTRB(16.0, 8.0, 16.0, 0),
-                  child: Text(
-                    'Kaufmännischen und Hauswirtschaftlichen Schulen Donaueschingen / Continental AG',
-                    style: Theme.of(context).textTheme.bodyMedium,
-                  ),
+              ),
+              Padding(
+                padding: const EdgeInsets.fromLTRB(16, 15, 16, 0),
+                child: Text(
+                  S.of(context).apprenticeshipLocations,
+                  style: textTheme.bodyMedium,
                 ),
-                const SizedBox(height: 10),
-                Padding(
-                  padding: const EdgeInsets.fromLTRB(16.0, 30.0, 16.0, 0),
-                  child: Text(
-                    'Studium: Bachelor of Science',
-                    style: Theme.of(context).textTheme.titleLarge,
-                  ),
+              ),
+              Padding(
+                padding: const EdgeInsets.fromLTRB(16, 40, 16, 0),
+                child: Text(
+                  S.of(context).study,
+                  style: titleLarge,
                 ),
-                const SizedBox(height: 10),
-                Padding(
-                  padding: const EdgeInsets.fromLTRB(16.0, 8.0, 16.0, 0),
-                  child: Text(
-                    'September 2019 - Februar 2024',
-                    style: Theme.of(context).textTheme.bodySmall,
-                  ),
+              ),
+              Padding(
+                padding: const EdgeInsets.fromLTRB(16, 10, 16, 0),
+                child: Text(
+                  S.of(context).studyDate,
+                  style: textTheme.bodySmall,
                 ),
-                const SizedBox(height: 10),
-                Padding(
-                  padding: const EdgeInsets.fromLTRB(16.0, 8.0, 16.0, 0),
-                  child: Text(
-                    'Study Plus Mathem. tech. Softwaredeveloper\nAllgemeine Informatik (Vertiefungsrichtung Software Engineering)',
-                    style: Theme.of(context).textTheme.bodyLarge,
-                  ),
+              ),
+              Padding(
+                padding: const EdgeInsets.fromLTRB(16, 15, 16, 0),
+                child: Text(
+                  '${S.of(context).myJob}\n${S.of(context).studySpecialization}',
+                  style: textTheme.bodyLarge,
                 ),
-                const SizedBox(height: 10),
-                Padding(
-                  padding: const EdgeInsets.fromLTRB(16.0, 8.0, 16.0, 0),
-                  child: Text(
-                    'Furtwangen University (HFU) / Continental AG',
-                    style: Theme.of(context).textTheme.bodyMedium,
-                  ),
+              ),
+              Padding(
+                padding: const EdgeInsets.fromLTRB(16, 15, 16, 100),
+                child: Text(
+                  S.of(context).studyLocations,
+                  style: textTheme.bodyMedium,
                 ),
-                const SizedBox(height: 100),
-              ]),
-            ),
-          ],
-        ),
-      );
+              ),
+            ]),
+          ),
+        ],
+      ),
+    );
+  }
 }

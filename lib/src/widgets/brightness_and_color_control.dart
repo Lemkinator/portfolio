@@ -2,6 +2,7 @@ import 'package:adaptive_breakpoints/adaptive_breakpoints.dart';
 import 'package:flutter/material.dart';
 
 import '../data.dart';
+import '../localization.dart';
 
 bool _isLargeScreen(BuildContext context) => getWindowType(context) >= AdaptiveWindowType.large;
 
@@ -39,7 +40,7 @@ class NavigationTrailing extends StatelessWidget {
           children: [
             Row(
               children: [
-                const Text('Light'),
+                Text(S.current.light),
                 Expanded(child: Container()),
                 Switch(
                     value: useLightMode,
@@ -122,7 +123,7 @@ class _BrightnessButton extends StatelessWidget {
     final isBright = Theme.of(context).brightness == Brightness.light;
     return Tooltip(
       preferBelow: showTooltipBelow,
-      message: 'Toggle light',
+      message: S.of(context).toggleLight,
       child: IconButton(
         icon: isBright ? const Icon(Icons.dark_mode_outlined) : const Icon(Icons.light_mode_outlined),
         onPressed: () => handleBrightnessChange(!isBright),
@@ -147,7 +148,7 @@ class _ColorSeedButton extends StatelessWidget {
         Icons.palette_outlined,
         color: Theme.of(context).colorScheme.onSurfaceVariant,
       ),
-      tooltip: 'Select a seed color',
+      tooltip: S.of(context).selectASeedColor,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
       itemBuilder: (context) {
         return List.generate(ColorSeed.values.length, (index) {
@@ -167,7 +168,7 @@ class _ColorSeedButton extends StatelessWidget {
                 ),
                 Padding(
                   padding: const EdgeInsets.only(left: 20),
-                  child: Text(currentColor.label),
+                  child: Text(currentColor.localizedLabel()),
                 ),
               ],
             ),

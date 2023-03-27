@@ -1,0 +1,52 @@
+{
+  "@@locale": "de",
+  "helloWorld": "Hallo Welt!",
+  "hello": "Hallo {userName}",
+  "@hello": {
+    "description": "Eine Nachricht mit einem Parameter.",
+    "placeholders": {
+      "userName": {
+        "type": "String",
+        "example": "Bob"
+      }
+    }
+  },
+  "explore": "Explore",
+  "about": "About",
+  "apps": "Apps",
+  "media": "Media",
+  "colorBaseline": "M3 Baseline",
+  "colorIndigo": "Indigo",
+  "colorBlue": "Blau",
+  "colorTeal": "Türkis",
+  "colorGreen": "Grün",
+  "colorYellow": "Gelb",
+  "colorOrange": "Orange",
+  "colorDeepOrange": "Dunkel Orange",
+  "colorPink": "Pink",
+  "selectASeedColor": "Farbe auswählen",
+  "toggleLight": "Hell/Dunkel",
+  "light": "Hell",
+  "mySlogan": "Wer den schnellen Erfolg sucht, sollte nicht programmieren, sondern Holz hacken.",
+  "myJob": "Study Plus Mathem.-Tech. Softwaredeveloper",
+  "myDescription": "Hallo, mein Name ist Leonard. Neben meiner Leidenschaft für Technik, Smartphones, Android und Computerspiele, programmiere ich gerne Apps für Android im OneUI-Stil oder bearbeite Videos, die ich mit meiner Racing-Drohne aufnehme.",
+  "apprenticeship": "Ausbildung",
+  "apprenticeshipDate": "September 2019 - Juli 2021",
+  "apprenticeshipJob": "Mathem. tech. Softwaredeveloper",
+  "apprenticeshipLocations": "Kaufmännischen und Hauswirtschaftlichen Schulen Donaueschingen / Continental AG",
+  "study": "Studium: Bachelor of Science",
+  "studyDate": "September 2019 - Februar 2024",
+  "studySpecialization": "Allgemeine Informatik (Vertiefungsrichtung Software Engineering)",
+  "studyLocations": "Furtwangen University (HFU) / Continental AG",
+  "sudoku": "Sudoku",
+  "sudokuDescription": "Eine Sudoku App im schönen OneUI-Design.",
+  "lightUtopia": "Light Utopia",
+  "cinematicFreestyleFpv": "Cinematic / Freestyle FPV",
+  "studiportal": "Studiportal",
+  "studiportalDescription": "Die neue Studiportal-App mit OneUI-Design.",
+  "nakBuch": "NAK Buch",
+  "nakBuchDescription": "Die neue nicht-offizielle Liederbuch-App der Neuapostolischen Kirche.",
+  "accelerate": "Accelerate",
+  "oneui": "OneUI",
+  "game": "Spiel"
+}

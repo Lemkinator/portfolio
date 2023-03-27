@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 
+import 'localization.dart';
 import 'routing.dart';
 import 'screens/navigator.dart';
 import 'data.dart';
@@ -95,6 +97,13 @@ class _HomeState extends State<Home> {
           // https://github.com/flutter/flutter/issues/82053
           debugShowCheckedModeBanner: false,
           title: 'Leonard Lemke',
+          localizationsDelegates: const [
+            S.delegate,
+            GlobalMaterialLocalizations.delegate,
+            GlobalWidgetsLocalizations.delegate,
+            GlobalCupertinoLocalizations.delegate,
+          ],
+          supportedLocales: S.delegate.supportedLocales,
           themeMode: themeMode,
           theme: ThemeData(
             pageTransitionsTheme: const PageTransitionsTheme(
