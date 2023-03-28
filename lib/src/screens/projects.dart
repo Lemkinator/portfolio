@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/src/widgets/project_grid.dart';
-
+import '../widgets.dart';
 import '../data.dart';
 import '../routing.dart';
 

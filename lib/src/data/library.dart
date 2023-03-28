@@ -1,5 +1,4 @@
-import 'package:portfolio/src/data.dart';
-
+import '../data.dart';
 import '../localization.dart';
 
 final libraryInstance = Library()
