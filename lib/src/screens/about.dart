@@ -26,29 +26,23 @@ class AboutScreen extends StatelessWidget {
       color: Theme.of(context).colorScheme.secondary,
     );
     return Scaffold(
-      body: CustomScrollView(
-        slivers: [
-          SliverList(
-            delegate: SliverChildListDelegate(<Widget>[
-              Padding(
-                padding: const EdgeInsets.fromLTRB(16, 20, 16, 0),
-                child: Text(
+      body: Padding(
+        padding: const EdgeInsets.fromLTRB(16, 16, 5, 16),
+        child: CustomScrollView(
+          slivers: [
+            SliverList(
+              delegate: SliverChildListDelegate(<Widget>[
+                Text(
                   S.of(context).myJob,
                   style: titleLarge,
                 ),
-              ),
-              const SizedBox(height: 10),
-              Padding(
-                padding: const EdgeInsets.fromLTRB(16, 8, 16, 0),
-                child: Text(
+                const SizedBox(height: 10),
+                Text(
                   S.of(context).myDescription,
                   style: textTheme.bodyLarge,
                 ),
-              ),
-              const SizedBox(height: 10),
-              Padding(
-                padding: const EdgeInsets.all(16),
-                child: Align(
+                const SizedBox(height: 30),
+                Align(
                   alignment: Alignment.centerLeft,
                   child: ConstrainedBox(
                     constraints: const BoxConstraints(maxWidth: 512),
@@ -65,85 +59,66 @@ class AboutScreen extends StatelessWidget {
                     ),
                   ),
                 ),
-              ),
-              /*Swiper(
-                    itemBuilder: (BuildContext context, int index) {
-                      return images[index];
-                    },
-                    itemCount: 3,
-                    itemWidth: 512.0,
-                    itemHeight: 512.0,
-                    layout: SwiperLayout.TINDER,
-                    pagination: const SwiperPagination(),
-                    control: const SwiperControl(),
-                  ),
-                ),*/
-              Padding(
-                padding: const EdgeInsets.fromLTRB(16, 10, 16, 0),
-                child: Text(
+                /*Swiper(
+                      itemBuilder: (BuildContext context, int index) {
+                        return images[index];
+                      },
+                      itemCount: 3,
+                      itemWidth: 512.0,
+                      itemHeight: 512.0,
+                      layout: SwiperLayout.TINDER,
+                      pagination: const SwiperPagination(),
+                      control: const SwiperControl(),
+                    ),
+                  ),*/
+                const SizedBox(height: 20),
+                Text(
                   S.of(context).mySlogan,
                   style: textTheme.bodyLarge,
                 ),
-              ),
-              Padding(
-                padding: const EdgeInsets.fromLTRB(16, 40, 16, 0),
-                child: Text(
+                const SizedBox(height: 40),
+                Text(
                   S.of(context).apprenticeship,
                   style: titleLarge,
                 ),
-              ),
-              Padding(
-                padding: const EdgeInsets.fromLTRB(16, 10, 16, 0),
-                child: Text(
+                Text(
                   S.of(context).apprenticeshipDate,
                   style: textTheme.bodySmall,
                 ),
-              ),
-              Padding(
-                padding: const EdgeInsets.fromLTRB(16, 15, 16, 0),
-                child: Text(
+                const SizedBox(height: 10),
+                Text(
                   S.of(context).apprenticeshipJob,
                   style: textTheme.bodyLarge,
                 ),
-              ),
-              Padding(
-                padding: const EdgeInsets.fromLTRB(16, 15, 16, 0),
-                child: Text(
+                const SizedBox(height: 10),
+                Text(
                   S.of(context).apprenticeshipLocations,
                   style: textTheme.bodyMedium,
                 ),
-              ),
-              Padding(
-                padding: const EdgeInsets.fromLTRB(16, 40, 16, 0),
-                child: Text(
+                const SizedBox(height: 40),
+                Text(
                   S.of(context).study,
                   style: titleLarge,
                 ),
-              ),
-              Padding(
-                padding: const EdgeInsets.fromLTRB(16, 10, 16, 0),
-                child: Text(
+                Text(
                   S.of(context).studyDate,
                   style: textTheme.bodySmall,
                 ),
-              ),
-              Padding(
-                padding: const EdgeInsets.fromLTRB(16, 15, 16, 0),
-                child: Text(
+                const SizedBox(height: 10),
+                Text(
                   '${S.of(context).myJob}\n${S.of(context).studySpecialization}',
                   style: textTheme.bodyLarge,
                 ),
-              ),
-              Padding(
-                padding: const EdgeInsets.fromLTRB(16, 15, 16, 100),
-                child: Text(
+                const SizedBox(height: 10),
+                Text(
                   S.of(context).studyLocations,
                   style: textTheme.bodyMedium,
                 ),
-              ),
-            ]),
-          ),
-        ],
+                const SizedBox(height: 40),
+              ]),
+            ),
+          ],
+        ),
       ),
     );
   }
