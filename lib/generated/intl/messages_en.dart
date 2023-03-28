@@ -26,6 +26,7 @@ class MessageLookup extends MessageLookupByLibrary {
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "about": MessageLookupByLibrary.simpleMessage("About"),
         "accelerate": MessageLookupByLibrary.simpleMessage("Accelerate"),
+        "allProjects": MessageLookupByLibrary.simpleMessage("All Projects"),
         "apprenticeship":
             MessageLookupByLibrary.simpleMessage("Apprenticeship"),
         "apprenticeshipDate":
@@ -35,6 +36,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "apprenticeshipLocations": MessageLookupByLibrary.simpleMessage(
             "Kaufmännischen und Hauswirtschaftlichen Schulen Donaueschingen / Continental AG"),
         "apps": MessageLookupByLibrary.simpleMessage("Apps"),
+        "appsDescription": MessageLookupByLibrary.simpleMessage(
+            "Modern Apps in Samsungs OneUI-Style."),
         "cinematicFreestyleFpv":
             MessageLookupByLibrary.simpleMessage("Cinematic / Freestyle FPV"),
         "colorBaseline": MessageLookupByLibrary.simpleMessage("M3 Baseline"),
@@ -63,6 +66,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "nakBuchDescription": MessageLookupByLibrary.simpleMessage(
             "The new non-official songbook app of the New Apostolic Church."),
         "oneui": MessageLookupByLibrary.simpleMessage("OneUI"),
+        "projects": MessageLookupByLibrary.simpleMessage("Projects"),
         "selectASeedColor":
             MessageLookupByLibrary.simpleMessage("Select a seed color"),
         "studiportal": MessageLookupByLibrary.simpleMessage("Studiportal"),

@@ -26,11 +26,11 @@ class AboutScreen extends StatelessWidget {
       color: Theme.of(context).colorScheme.secondary,
     );
     return Scaffold(
-      body: Padding(
-        padding: const EdgeInsets.fromLTRB(16, 16, 5, 16),
-        child: CustomScrollView(
-          slivers: [
-            SliverList(
+      body: CustomScrollView(
+        slivers: [
+          SliverPadding(
+            padding: const EdgeInsets.fromLTRB(16, 16, 5, 16),
+            sliver: SliverList(
               delegate: SliverChildListDelegate(<Widget>[
                 Text(
                   S.of(context).myJob,
@@ -45,11 +45,13 @@ class AboutScreen extends StatelessWidget {
                 Align(
                   alignment: Alignment.centerLeft,
                   child: ConstrainedBox(
-                    constraints: const BoxConstraints(maxWidth: 512),
+                    constraints: const BoxConstraints(maxWidth: 400),
                     child: AspectRatio(
                       aspectRatio: 1,
                       child: CarouselSlider.builder(
                           unlimitedMode: true,
+                          enableAutoSlider: true,
+                          autoSliderDelay: const Duration(seconds: 7),
                           slideBuilder: (index) => images[index],
                           slideTransform: const CubeTransform(),
                           slideIndicator: CircularSlideIndicator(
@@ -59,18 +61,6 @@ class AboutScreen extends StatelessWidget {
                     ),
                   ),
                 ),
-                /*Swiper(
-                      itemBuilder: (BuildContext context, int index) {
-                        return images[index];
-                      },
-                      itemCount: 3,
-                      itemWidth: 512.0,
-                      itemHeight: 512.0,
-                      layout: SwiperLayout.TINDER,
-                      pagination: const SwiperPagination(),
-                      control: const SwiperControl(),
-                    ),
-                  ),*/
                 const SizedBox(height: 20),
                 Text(
                   S.of(context).mySlogan,
@@ -117,8 +107,8 @@ class AboutScreen extends StatelessWidget {
                 const SizedBox(height: 40),
               ]),
             ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }

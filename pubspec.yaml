@@ -75,7 +75,9 @@ flutter:
   assets:
     - images/
     - images/about/
+    - images/logo/
     - images/apps/
+    - images/apps/oneUI/
     - images/apps/nakbuch/
     - images/apps/studiportal/
     - images/apps/sudoku/

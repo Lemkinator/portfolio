@@ -26,6 +26,7 @@ class MessageLookup extends MessageLookupByLibrary {
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "about": MessageLookupByLibrary.simpleMessage("About"),
         "accelerate": MessageLookupByLibrary.simpleMessage("Accelerate"),
+        "allProjects": MessageLookupByLibrary.simpleMessage("Alle Projekte"),
         "apprenticeship": MessageLookupByLibrary.simpleMessage("Ausbildung"),
         "apprenticeshipDate":
             MessageLookupByLibrary.simpleMessage("September 2019 - Juli 2021"),
@@ -34,6 +35,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "apprenticeshipLocations": MessageLookupByLibrary.simpleMessage(
             "Kaufmännischen und Hauswirtschaftlichen Schulen Donaueschingen / Continental AG"),
         "apps": MessageLookupByLibrary.simpleMessage("Apps"),
+        "appsDescription": MessageLookupByLibrary.simpleMessage(
+            "Moderne Apps in Samsungs OneUI-Style."),
         "cinematicFreestyleFpv":
             MessageLookupByLibrary.simpleMessage("Cinematic / Freestyle FPV"),
         "colorBaseline": MessageLookupByLibrary.simpleMessage("M3 Baseline"),
@@ -63,6 +66,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "nakBuchDescription": MessageLookupByLibrary.simpleMessage(
             "Die neue nicht-offizielle Liederbuch-App der Neuapostolischen Kirche."),
         "oneui": MessageLookupByLibrary.simpleMessage("OneUI"),
+        "projects": MessageLookupByLibrary.simpleMessage("Projekte"),
         "selectASeedColor":
             MessageLookupByLibrary.simpleMessage("Farbe auswählen"),
         "studiportal": MessageLookupByLibrary.simpleMessage("Studiportal"),

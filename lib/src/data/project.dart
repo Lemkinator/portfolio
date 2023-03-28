@@ -5,6 +5,7 @@ class Project {
   final String description;
   final List<String> tags;
   final String image;
+  final String route;
   final DateTime date;
 
   Project({
@@ -14,6 +15,7 @@ class Project {
     required this.description,
     required this.tags,
     required this.image,
+    required this.route,
     required this.date,
   });
 }

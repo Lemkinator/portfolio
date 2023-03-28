@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/src/screens/explore.dart';
 
 import '../routing.dart';
 import 'about.dart';
@@ -26,7 +27,7 @@ class HomeScaffoldBody extends StatelessWidget {
         if (currentRoute.pathTemplate == '/')
           const FadeTransitionPage<void>(
             key: ValueKey('explore'),
-            child: ProjectsScreen(),
+            child: ExploreScreen(),
           )
         else if (currentRoute.pathTemplate == '/about')
           FadeTransitionPage<void>(

@@ -449,6 +449,36 @@ class S {
       args: [],
     );
   }
+
+  /// `Modern Apps in Samsungs OneUI-Style.`
+  String get appsDescription {
+    return Intl.message(
+      'Modern Apps in Samsungs OneUI-Style.',
+      name: 'appsDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Projects`
+  String get projects {
+    return Intl.message(
+      'Projects',
+      name: 'projects',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `All Projects`
+  String get allProjects {
+    return Intl.message(
+      'All Projects',
+      name: 'allProjects',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
