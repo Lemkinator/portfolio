@@ -107,9 +107,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "whatIsFpv": MessageLookupByLibrary.simpleMessage(
             "What is Cinematic/Freestyle FPV?"),
         "whatIsFpv1": MessageLookupByLibrary.simpleMessage(
-            "First-person view (FPV) is a method where a radio-controlled aircraft (drone) is piloted remotely from a first-person perspective via an onboard camera, fed wirelessly to video FPV goggles. "),
+            "First-person view (FPV) is a method where a radio-controlled aircraft (drone) is piloted remotely from a first-person perspective via an onboard camera, fed wirelessly to video FPV goggles."),
         "whatIsFpv2": MessageLookupByLibrary.simpleMessage(
-            "Freestyle FPV is all about flying skills and doing nice tricks or movements. "),
+            "Freestyle FPV is all about flying skills and doing nice tricks or movements."),
         "whatIsFpv3": MessageLookupByLibrary.simpleMessage(
             "Cinematic FPV content tends to be slower and smoother than Freestyle FPV. The settings are chosen more for their visual attraction than for the technical flying skills they demand."),
         "whatIsSpecialAboutFpv":

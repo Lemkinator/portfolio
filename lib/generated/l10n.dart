@@ -490,20 +490,20 @@ class S {
     );
   }
 
-  /// `First-person view (FPV) is a method where a radio-controlled aircraft (drone) is piloted remotely from a first-person perspective via an onboard camera, fed wirelessly to video FPV goggles. `
+  /// `First-person view (FPV) is a method where a radio-controlled aircraft (drone) is piloted remotely from a first-person perspective via an onboard camera, fed wirelessly to video FPV goggles.`
   String get whatIsFpv1 {
     return Intl.message(
-      'First-person view (FPV) is a method where a radio-controlled aircraft (drone) is piloted remotely from a first-person perspective via an onboard camera, fed wirelessly to video FPV goggles. ',
+      'First-person view (FPV) is a method where a radio-controlled aircraft (drone) is piloted remotely from a first-person perspective via an onboard camera, fed wirelessly to video FPV goggles.',
       name: 'whatIsFpv1',
       desc: '',
       args: [],
     );
   }
 
-  /// `Freestyle FPV is all about flying skills and doing nice tricks or movements. `
+  /// `Freestyle FPV is all about flying skills and doing nice tricks or movements.`
   String get whatIsFpv2 {
     return Intl.message(
-      'Freestyle FPV is all about flying skills and doing nice tricks or movements. ',
+      'Freestyle FPV is all about flying skills and doing nice tricks or movements.',
       name: 'whatIsFpv2',
       desc: '',
       args: [],

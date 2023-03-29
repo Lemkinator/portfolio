@@ -54,22 +54,22 @@ class MessageLookup extends MessageLookupByLibrary {
         "hello": m0,
         "helloWorld": MessageLookupByLibrary.simpleMessage("Hallo Welt!"),
         "journey1": MessageLookupByLibrary.simpleMessage(
-            "The journey began with a normal consumer drone..."),
+            "Die Reise begann mit einer normalen Verbraucherdrohne..."),
         "journey2": MessageLookupByLibrary.simpleMessage(
-            "... but ended very early with a broken drone and the fact, that its nearly impossible to repair those drones by your own."),
+            "... endete aber sehr früh mit einer kaputten Drohne und der Tatsache, dass dass es fast unmöglich ist, diese Drohnen selbst zu reparieren."),
         "journey3": MessageLookupByLibrary.simpleMessage(
-            "Since the repair at the manufacturer is quite expensive, i decided to build a drone myself... Which turned out not to be cheaper..."),
+            "Da die Reparatur beim Hersteller teuer ist, habe ich mich entschlossen, selbst eine Drohne zu bauen... Was sich als nicht billiger erwies..."),
         "journey4": MessageLookupByLibrary.simpleMessage(
-            "After researching for the needed parts, the assembly began."),
-        "journey5":
-            MessageLookupByLibrary.simpleMessage("Assembling and wiring..."),
+            "Nach der Suche nach den benötigten Teilen begann der Zusammenbau."),
+        "journey5": MessageLookupByLibrary.simpleMessage(
+            "Zusammenbau und Verkabelung..."),
         "journey6": MessageLookupByLibrary.simpleMessage(
-            "Getting the Hardware ready..."),
+            "Vorbereitungen für die Hardware..."),
         "journey7": MessageLookupByLibrary.simpleMessage(
-            "Setup and configuration of the software..."),
-        "journey8": MessageLookupByLibrary.simpleMessage("Done!"),
+            "Einrichtung und Konfiguration der Software..."),
+        "journey8": MessageLookupByLibrary.simpleMessage("Fertig!"),
         "journey9": MessageLookupByLibrary.simpleMessage(
-            "Well (after a few encounters with the snowy ground)... seems a lot more durable than the drone before..."),
+            "Nun (nach ein paar Begegnungen mit dem schneebedeckten Boden)... scheint robuster als die alte Drohne..."),
         "light": MessageLookupByLibrary.simpleMessage("Hell"),
         "lightUtopia": MessageLookupByLibrary.simpleMessage("Light Utopia"),
         "media": MessageLookupByLibrary.simpleMessage("Media"),
@@ -102,31 +102,31 @@ class MessageLookup extends MessageLookupByLibrary {
         "sudokuDescription": MessageLookupByLibrary.simpleMessage(
             "Eine Sudoku App im schönen OneUI-Design."),
         "toggleLight": MessageLookupByLibrary.simpleMessage("Hell/Dunkel"),
-        "whatGotMeIntoFpv":
-            MessageLookupByLibrary.simpleMessage("What got me into FPV?"),
+        "whatGotMeIntoFpv": MessageLookupByLibrary.simpleMessage(
+            "Was hat mich zu FPV gebracht?"),
         "whatIsFpv": MessageLookupByLibrary.simpleMessage(
-            "What is Cinematic/Freestyle FPV?"),
+            "Was ist Cinematic/Freestyle FPV?"),
         "whatIsFpv1": MessageLookupByLibrary.simpleMessage(
-            "First-person view (FPV) is a method where a radio-controlled aircraft (drone) is piloted remotely from a first-person perspective via an onboard camera, fed wirelessly to video FPV goggles. "),
+            "First-Person-View (FPV) ist eine Methode, bei der ein funkgesteuertes Fluggerät (Drohne) aus der Ich-Perspektive über eine Bordkamera ferngesteuert wird, die drahtlos an eine FPV-Videobrille übertragen wird."),
         "whatIsFpv2": MessageLookupByLibrary.simpleMessage(
-            "Freestyle FPV is all about flying skills and doing nice tricks or movements. "),
+            "Bei Freestyle FPV geht es um Flugkünste und schöne Tricks oder Bewegungen."),
         "whatIsFpv3": MessageLookupByLibrary.simpleMessage(
-            "Cinematic FPV content tends to be slower and smoother than Freestyle FPV. The settings are chosen more for their visual attraction than for the technical flying skills they demand."),
-        "whatIsSpecialAboutFpv":
-            MessageLookupByLibrary.simpleMessage("What is special about FPV?"),
+            "Cinematic FPV ist tendenziell langsamer und flüssiger als Freestyle FPV. Die Einstellungen werden eher wegen ihres visuellen Reizes gewählt als wegen der technischen Flugfähigkeiten, die sie erfordern."),
+        "whatIsSpecialAboutFpv": MessageLookupByLibrary.simpleMessage(
+            "Was ist das Besondere an FPV?"),
         "whatIsSpecialAboutFpv1": MessageLookupByLibrary.simpleMessage(
-            "The difference to normal drone pilots is that FPV pilots mostly build their drone(s) themselves."),
+            "Der Unterschied zu normalen Drohnenpiloten ist, dass FPV-Piloten ihre Drohne(n) meist selbst bauen."),
         "whatIsSpecialAboutFpv2":
-            MessageLookupByLibrary.simpleMessage("This includes:"),
+            MessageLookupByLibrary.simpleMessage("Dies beinhaltet:"),
         "whatIsSpecialAboutFpv3":
-            MessageLookupByLibrary.simpleMessage("Search and buy parts"),
+            MessageLookupByLibrary.simpleMessage("Teile suchen und kaufen"),
         "whatIsSpecialAboutFpv4":
-            MessageLookupByLibrary.simpleMessage("Assembling the drone"),
+            MessageLookupByLibrary.simpleMessage("Zusammenbau der Drohne"),
         "whatIsSpecialAboutFpv5": MessageLookupByLibrary.simpleMessage(
-            "Setting up the drone (Software)"),
+            "Einrichten der Drohne (Software)"),
         "whatIsSpecialAboutFpv6": MessageLookupByLibrary.simpleMessage(
-            "Furthermore, it requires much more practice, since FPV drones are usually flown in acro mode (acrobatic mode: e.g. when releasing the control sticks, the drone does not automatically level itself or if you move the sticks forward, the drone will pitch forward continuously instead of accelerating forward...)."),
+            "Außerdem erfordert es viel mehr Übung, da FPV-Drohnen in der Regel im Akro-Modus geflogen werden (Akrobatik-Modus: z.B. wenn man die Steuerknüppel loslässt, bewegt sich die Drohne nicht automatisch wieder in ihre Ausgangsposition, oder wenn man die Knüppel nach vorne bewegt, neigt sich die Drohne kontinuierlich nach vorne, anstatt nach vorne zu beschleunigen...)."),
         "whatIsSpecialAboutFpv7": MessageLookupByLibrary.simpleMessage(
-            "But the practice is worth it, because flying FPV is incredibly fun!")
+            "Aber die Übung ist es wert, denn FPV-Fliegen macht unglaublich viel Spaß!")
       };
 }
