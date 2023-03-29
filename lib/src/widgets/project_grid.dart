@@ -83,11 +83,11 @@ class ProjectCard extends StatelessWidget {
                   children: [
                     Text(
                       project.title,
-                      style: Theme.of(context).textTheme.titleLarge?.apply(color: Colors.white),
+                      style: Theme.of(context).textTheme.headlineLarge,
                     ),
                     Text(
                       project.description,
-                      style: Theme.of(context).textTheme.bodyMedium?.apply(color: Colors.white),
+                      style: Theme.of(context).textTheme.bodyLarge,
                     ),
                   ],
                 ),

@@ -6,35 +6,36 @@ import '../localization.dart';
 class AboutScreen extends StatelessWidget {
   AboutScreen({super.key});
 
-  static const List<String> fileNames = [
+  final List<Widget> images = [
     'images/about/me1.jpg',
     'images/about/me2.jpg',
     'images/about/me3.jpg',
-  ];
-
-  final List<Widget> images = fileNames
-      .map((file) => ClipRRect(
-            borderRadius: const BorderRadius.all(Radius.circular(16)),
-            child: Image.asset(file, fit: BoxFit.cover),
-          ))
+  ]
+      .map((file) => Padding(
+        padding: const EdgeInsets.only(bottom: 20),
+        child: ClipRRect(
+              borderRadius: const BorderRadius.all(Radius.circular(16)),
+              child: Image.asset(file, fit: BoxFit.cover),
+            ),
+      ))
       .toList();
 
   @override
   Widget build(BuildContext context) {
     final textTheme = Theme.of(context).textTheme;
-    final titleLarge = textTheme.titleLarge?.copyWith(
+    final headlineLarge = textTheme.headlineLarge?.copyWith(
       color: Theme.of(context).colorScheme.secondary,
     );
     return Scaffold(
       body: CustomScrollView(
         slivers: [
           SliverPadding(
-            padding: const EdgeInsets.fromLTRB(16, 16, 5, 16),
+            padding: const EdgeInsets.all(16),
             sliver: SliverList(
               delegate: SliverChildListDelegate(<Widget>[
                 Text(
                   S.of(context).myJob,
-                  style: titleLarge,
+                  style: headlineLarge,
                 ),
                 const SizedBox(height: 10),
                 Text(
@@ -53,15 +54,13 @@ class AboutScreen extends StatelessWidget {
                           enableAutoSlider: true,
                           autoSliderDelay: const Duration(seconds: 7),
                           slideBuilder: (index) => images[index],
-                          slideTransform: const CubeTransform(),
-                          slideIndicator: CircularSlideIndicator(
-                            padding: const EdgeInsets.only(bottom: 16),
-                          ),
+                          slideTransform: const ParallaxTransform(),
+                          slideIndicator: CircularSlideIndicator(),
                           itemCount: images.length),
                     ),
                   ),
                 ),
-                const SizedBox(height: 20),
+                const SizedBox(height: 10),
                 Text(
                   S.of(context).mySlogan,
                   style: textTheme.bodyLarge,
@@ -69,7 +68,7 @@ class AboutScreen extends StatelessWidget {
                 const SizedBox(height: 40),
                 Text(
                   S.of(context).apprenticeship,
-                  style: titleLarge,
+                  style: headlineLarge,
                 ),
                 Text(
                   S.of(context).apprenticeshipDate,
@@ -88,7 +87,7 @@ class AboutScreen extends StatelessWidget {
                 const SizedBox(height: 40),
                 Text(
                   S.of(context).study,
-                  style: titleLarge,
+                  style: headlineLarge,
                 ),
                 Text(
                   S.of(context).studyDate,

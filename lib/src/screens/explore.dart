@@ -10,7 +10,7 @@ class ExploreScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final textTheme = Theme.of(context).textTheme;
-    final titleLarge = textTheme.titleLarge?.copyWith(
+    final headlineLarge = textTheme.headlineLarge?.copyWith(
       color: Theme.of(context).colorScheme.secondary,
     );
     return Scaffold(
@@ -43,7 +43,7 @@ class ExploreScreen extends StatelessWidget {
               padding: const EdgeInsets.fromLTRB(16, 40, 16, 10),
               child: Text(
                 S.of(context).projects,
-                style: titleLarge,
+                style: headlineLarge,
               ),
             ),
           ),
@@ -53,7 +53,7 @@ class ExploreScreen extends StatelessWidget {
               padding: const EdgeInsets.fromLTRB(16, 40, 16, 10),
               child: Text(
                 S.of(context).allProjects,
-                style: titleLarge,
+                style: headlineLarge,
               ),
             ),
           ),

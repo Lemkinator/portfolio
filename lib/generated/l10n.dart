@@ -479,6 +479,236 @@ class S {
       args: [],
     );
   }
+
+  /// `What is Cinematic/Freestyle FPV?`
+  String get whatIsFpv {
+    return Intl.message(
+      'What is Cinematic/Freestyle FPV?',
+      name: 'whatIsFpv',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `First-person view (FPV) is a method where a radio-controlled aircraft (drone) is piloted remotely from a first-person perspective via an onboard camera, fed wirelessly to video FPV goggles. `
+  String get whatIsFpv1 {
+    return Intl.message(
+      'First-person view (FPV) is a method where a radio-controlled aircraft (drone) is piloted remotely from a first-person perspective via an onboard camera, fed wirelessly to video FPV goggles. ',
+      name: 'whatIsFpv1',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Freestyle FPV is all about flying skills and doing nice tricks or movements. `
+  String get whatIsFpv2 {
+    return Intl.message(
+      'Freestyle FPV is all about flying skills and doing nice tricks or movements. ',
+      name: 'whatIsFpv2',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Cinematic FPV content tends to be slower and smoother than Freestyle FPV. The settings are chosen more for their visual attraction than for the technical flying skills they demand.`
+  String get whatIsFpv3 {
+    return Intl.message(
+      'Cinematic FPV content tends to be slower and smoother than Freestyle FPV. The settings are chosen more for their visual attraction than for the technical flying skills they demand.',
+      name: 'whatIsFpv3',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `What is special about FPV?`
+  String get whatIsSpecialAboutFpv {
+    return Intl.message(
+      'What is special about FPV?',
+      name: 'whatIsSpecialAboutFpv',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `The difference to normal drone pilots is that FPV pilots mostly build their drone(s) themselves.`
+  String get whatIsSpecialAboutFpv1 {
+    return Intl.message(
+      'The difference to normal drone pilots is that FPV pilots mostly build their drone(s) themselves.',
+      name: 'whatIsSpecialAboutFpv1',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `This includes:`
+  String get whatIsSpecialAboutFpv2 {
+    return Intl.message(
+      'This includes:',
+      name: 'whatIsSpecialAboutFpv2',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Search and buy parts`
+  String get whatIsSpecialAboutFpv3 {
+    return Intl.message(
+      'Search and buy parts',
+      name: 'whatIsSpecialAboutFpv3',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Assembling the drone`
+  String get whatIsSpecialAboutFpv4 {
+    return Intl.message(
+      'Assembling the drone',
+      name: 'whatIsSpecialAboutFpv4',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Setting up the drone (Software)`
+  String get whatIsSpecialAboutFpv5 {
+    return Intl.message(
+      'Setting up the drone (Software)',
+      name: 'whatIsSpecialAboutFpv5',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Furthermore, it requires much more practice, since FPV drones are usually flown in acro mode (acrobatic mode: e.g. when releasing the control sticks, the drone does not automatically level itself or if you move the sticks forward, the drone will pitch forward continuously instead of accelerating forward...).`
+  String get whatIsSpecialAboutFpv6 {
+    return Intl.message(
+      'Furthermore, it requires much more practice, since FPV drones are usually flown in acro mode (acrobatic mode: e.g. when releasing the control sticks, the drone does not automatically level itself or if you move the sticks forward, the drone will pitch forward continuously instead of accelerating forward...).',
+      name: 'whatIsSpecialAboutFpv6',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `But the practice is worth it, because flying FPV is incredibly fun!`
+  String get whatIsSpecialAboutFpv7 {
+    return Intl.message(
+      'But the practice is worth it, because flying FPV is incredibly fun!',
+      name: 'whatIsSpecialAboutFpv7',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `What got me into FPV?`
+  String get whatGotMeIntoFpv {
+    return Intl.message(
+      'What got me into FPV?',
+      name: 'whatGotMeIntoFpv',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `The journey began with a normal consumer drone...`
+  String get journey1 {
+    return Intl.message(
+      'The journey began with a normal consumer drone...',
+      name: 'journey1',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `... but ended very early with a broken drone and the fact, that its nearly impossible to repair those drones by your own.`
+  String get journey2 {
+    return Intl.message(
+      '... but ended very early with a broken drone and the fact, that its nearly impossible to repair those drones by your own.',
+      name: 'journey2',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Since the repair at the manufacturer is quite expensive, i decided to build a drone myself... Which turned out not to be cheaper...`
+  String get journey3 {
+    return Intl.message(
+      'Since the repair at the manufacturer is quite expensive, i decided to build a drone myself... Which turned out not to be cheaper...',
+      name: 'journey3',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `After researching for the needed parts, the assembly began.`
+  String get journey4 {
+    return Intl.message(
+      'After researching for the needed parts, the assembly began.',
+      name: 'journey4',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Assembling and wiring...`
+  String get journey5 {
+    return Intl.message(
+      'Assembling and wiring...',
+      name: 'journey5',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Getting the Hardware ready...`
+  String get journey6 {
+    return Intl.message(
+      'Getting the Hardware ready...',
+      name: 'journey6',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Setup and configuration of the software...`
+  String get journey7 {
+    return Intl.message(
+      'Setup and configuration of the software...',
+      name: 'journey7',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Done!`
+  String get journey8 {
+    return Intl.message(
+      'Done!',
+      name: 'journey8',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Well (after a few encounters with the snowy ground)... seems a lot more durable than the drone before...`
+  String get journey9 {
+    return Intl.message(
+      'Well (after a few encounters with the snowy ground)... seems a lot more durable than the drone before...',
+      name: 'journey9',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Setup`
+  String get setup {
+    return Intl.message(
+      'Setup',
+      name: 'setup',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

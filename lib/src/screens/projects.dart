@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../screens.dart';
 import '../widgets.dart';
 import '../data.dart';
 import '../localization.dart';
@@ -37,7 +38,11 @@ class _ProjectsScreenState extends State<ProjectsScreen> with SingleTickerProvid
           const SliverToBoxAdapter(
             child: SizedBox(height: 40),
           ),
-          MoreInfo(widget.category),
+          widget.category == 'media'
+              ? MediaMoreInfo()
+              : widget.category == 'apps'
+                  ? const AppsMoreInfo()
+                  : Container(),
         ],
       ),
     );
@@ -69,28 +74,4 @@ String _getBackgroundImage(String? category) {
     return 'images/media/evoque_v2.jpg';
   }
   return 'images/logo/Banner_named.jpg';
-}
-
-class MoreInfo extends StatelessWidget {
-  const MoreInfo(this.category, {super.key});
-
-  final String? category;
-
-  @override
-  Widget build(BuildContext context) {
-    if (category == 'media') {
-      return SliverToBoxAdapter(
-        child: Padding(
-          padding: const EdgeInsets.fromLTRB(16, 10, 16, 10),
-          child: Text(
-            'FPV',
-            style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                  color: Theme.of(context).colorScheme.secondary,
-                ),
-          ),
-        ),
-      );
-    }
-    return const SliverToBoxAdapter(child: SizedBox());
-  }
 }
