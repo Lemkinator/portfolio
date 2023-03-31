@@ -49,10 +49,19 @@ class MessageLookup extends MessageLookupByLibrary {
         "colorPink": MessageLookupByLibrary.simpleMessage("Pink"),
         "colorTeal": MessageLookupByLibrary.simpleMessage("Türkis"),
         "colorYellow": MessageLookupByLibrary.simpleMessage("Gelb"),
+        "darkModeAutomaticallyAdaptsToTheSystemSettings":
+            MessageLookupByLibrary.simpleMessage(
+                "Dark Mode (passt sich automatisch den Systemeinstellungen an)"),
+        "dateFunctionSungOn": MessageLookupByLibrary.simpleMessage(
+            "Datumsfunktion (Gesungen am...)"),
         "explore": MessageLookupByLibrary.simpleMessage("Explore"),
+        "favorites": MessageLookupByLibrary.simpleMessage("Favoriten"),
+        "features": MessageLookupByLibrary.simpleMessage("Features"),
+        "free": MessageLookupByLibrary.simpleMessage("Kostenlos"),
         "game": MessageLookupByLibrary.simpleMessage("Spiel"),
         "hello": m0,
         "helloWorld": MessageLookupByLibrary.simpleMessage("Hallo Welt!"),
+        "history": MessageLookupByLibrary.simpleMessage("Verlauf"),
         "journey1": MessageLookupByLibrary.simpleMessage(
             "Die Reise begann mit einer normalen Verbraucherdrohne..."),
         "journey2": MessageLookupByLibrary.simpleMessage(
@@ -80,13 +89,59 @@ class MessageLookup extends MessageLookupByLibrary {
         "mySlogan": MessageLookupByLibrary.simpleMessage(
             "Wer den schnellen Erfolg sucht, sollte nicht programmieren, sondern Holz hacken."),
         "nakBuch": MessageLookupByLibrary.simpleMessage("NAK Buch"),
+        "nakBuchAmazonAppStore":
+            MessageLookupByLibrary.simpleMessage("NAK Buch im Amazon Appstore"),
+        "nakBuchAmazonAppStoreLink": MessageLookupByLibrary.simpleMessage(
+            "https://www.amazon.de/gp/product/B0BJ13C4RH"),
+        "nakBuchDataTab": MessageLookupByLibrary.simpleMessage("Data Tab"),
+        "nakBuchDataTabText": MessageLookupByLibrary.simpleMessage(
+            "Deine persönlichen Daten auf einen Blick."),
         "nakBuchDescription": MessageLookupByLibrary.simpleMessage(
             "Die neue nicht-offizielle Liederbuch-App der Neuapostolischen Kirche."),
-        "oneui": MessageLookupByLibrary.simpleMessage("OneUI"),
+        "nakBuchDisclaimer": MessageLookupByLibrary.simpleMessage(
+            "Diese App steht in keiner Verbindung zur Neuapostolischen Kirche oder der Verlag Friedrich Bischoff GmbH und beinhaltet lediglich die urheberrechtsfreien Texte aus dem folgenden Büchern:"),
+        "nakBuchDisclaimer1": MessageLookupByLibrary.simpleMessage(
+            "Gesangbuch (320 von 438 Liedern)"),
+        "nakBuchDisclaimer2": MessageLookupByLibrary.simpleMessage(
+            "Chorbuch (206 von 462 Liedern)"),
+        "nakBuchDisclaimer3": MessageLookupByLibrary.simpleMessage(
+            "Jugendliederbuch (41 von 102 Liedern)"),
+        "nakBuchDisclaimer4": MessageLookupByLibrary.simpleMessage(
+            "Ergänzungsheft zum Jugendliederbuch (3 von 20 Liedern)"),
+        "nakBuchDisclaimer5": MessageLookupByLibrary.simpleMessage(
+            "Bei den restlichen Liedern liegen die Rechte noch bei den Urhebern, weshalb diese nicht oder nur teilweise angezeigt werden können. Die Informationen zum Urheberrecht wurden mit großer Sorgfalt geprüft, wenn mir hierbei unwissend Fehler unterlaufen sind, bitte ich freundlichst um einen Hinweis, dem ich unverzüglich nachgehen werde."),
+        "nakBuchDisclaimer6": MessageLookupByLibrary.simpleMessage(
+            "Die Verwaltung der Rechte obliegt u.a. der Verlag Friedrich Bischoff GmbH, welche selbst eine (kostenpflichtige) App für das Gesangbuch und eine (kostenpflichtige) App für das Chorbuch herausgegeben hat."),
+        "nakBuchOneUi": MessageLookupByLibrary.simpleMessage(
+            "Die App wurde nach Samsungs OneUI-Richtlinien entwickelt. Zum Beispiel kann die Titelleiste bei großen Geräten auf jedem Bildschirm \"nach unten gezogen werden\", um eine angenehme (einhändige) Bedienung der oberen Knöpfe zu gewährleisten."),
+        "nakBuchPleasantTextView":
+            MessageLookupByLibrary.simpleMessage("Angenehme Textansicht"),
+        "nakBuchQuickActions":
+            MessageLookupByLibrary.simpleMessage("Schnelle Aktionen"),
+        "nakBuchQuickActionsText": MessageLookupByLibrary.simpleMessage(
+            "Um das Smartphone schnell stumm zu schalten, den Bitte Nicht Stören Modus zu aktivieren oder die offizielle App zu öffnen, falls der vollständige Liedtext nicht angezeigt werden kann."),
+        "nakBuchQuickSettingForMutedoNotDisturbMode":
+            MessageLookupByLibrary.simpleMessage(
+                "chnell-Einstellung für Stummschalten/Bitte-Nicht-Stören-Modus"),
+        "nakBuchShortcuts": MessageLookupByLibrary.simpleMessage("Shortcuts"),
+        "nakBuchShortcutsText": MessageLookupByLibrary.simpleMessage(
+            "Alle Bücher in einer App ist unpraktisch? Für jedes Buch kann eine Verknüpfung erstellt werden."),
+        "nakBuchSwipeSongs":
+            MessageLookupByLibrary.simpleMessage("Blätter-Funktion"),
+        "nakBuchSwipeSongsText": MessageLookupByLibrary.simpleMessage(
+            "Wisch-Geste, um zum nächsten/vorherigen Lied zu gelangen. Wie bei einem richtigen Buch."),
+        "notes": MessageLookupByLibrary.simpleMessage("Notizen"),
+        "oneui": MessageLookupByLibrary.simpleMessage("One UI"),
+        "otherFeatures":
+            MessageLookupByLibrary.simpleMessage("Sonstige Features"),
+        "privacyPolicy":
+            MessageLookupByLibrary.simpleMessage("Datenschutzerklärung"),
         "projects": MessageLookupByLibrary.simpleMessage("Projekte"),
+        "screenshots": MessageLookupByLibrary.simpleMessage("Screenshots"),
         "selectASeedColor":
             MessageLookupByLibrary.simpleMessage("Farbe auswählen"),
         "setup": MessageLookupByLibrary.simpleMessage("Setup"),
+        "sourceCode": MessageLookupByLibrary.simpleMessage("Source Code"),
         "studiportal": MessageLookupByLibrary.simpleMessage("Studiportal"),
         "studiportalDescription": MessageLookupByLibrary.simpleMessage(
             "Die neue Studiportal-App mit OneUI-Design."),
@@ -102,6 +157,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "sudokuDescription": MessageLookupByLibrary.simpleMessage(
             "Eine Sudoku App im schönen OneUI-Design."),
         "toggleLight": MessageLookupByLibrary.simpleMessage("Hell/Dunkel"),
+        "wearOsSupport":
+            MessageLookupByLibrary.simpleMessage("Wear OS support"),
+        "wearOsSupportText": MessageLookupByLibrary.simpleMessage(
+            "Smartphone vergessen? Kein Problem, die Textinhalte der App lassen sich Problemlos (in angenehmem Design) auf der Smartwatch anzeigen."),
         "whatGotMeIntoFpv": MessageLookupByLibrary.simpleMessage(
             "Was hat mich zu FPV gebracht?"),
         "whatIsFpv": MessageLookupByLibrary.simpleMessage(
@@ -127,6 +186,20 @@ class MessageLookup extends MessageLookupByLibrary {
         "whatIsSpecialAboutFpv6": MessageLookupByLibrary.simpleMessage(
             "Außerdem erfordert es viel mehr Übung, da FPV-Drohnen in der Regel im Akro-Modus geflogen werden (Akrobatik-Modus: z.B. wenn man die Steuerknüppel loslässt, bewegt sich die Drohne nicht automatisch wieder in ihre Ausgangsposition, oder wenn man die Knüppel nach vorne bewegt, neigt sich die Drohne kontinuierlich nach vorne, anstatt nach vorne zu beschleunigen...)."),
         "whatIsSpecialAboutFpv7": MessageLookupByLibrary.simpleMessage(
-            "Aber die Übung ist es wert, denn FPV-Fliegen macht unglaublich viel Spaß!")
+            "Aber die Übung ist es wert, denn FPV-Fliegen macht unglaublich viel Spaß!"),
+        "windows11Support":
+            MessageLookupByLibrary.simpleMessage("Windows 11 support"),
+        "windows11Support1": MessageLookupByLibrary.simpleMessage(
+            "Um mobile Apps auf einem Windows 11 PC nutzen zu können, muss der"),
+        "windows11Support2": MessageLookupByLibrary.simpleMessage(
+            "ms-windows-store://pdp/?productid=9NJHK44TTKSX"),
+        "windows11Support3":
+            MessageLookupByLibrary.simpleMessage("Amazon Appstore"),
+        "windows11Support4":
+            MessageLookupByLibrary.simpleMessage("installiert werden."),
+        "windows11Support5": MessageLookupByLibrary.simpleMessage(
+            "https://support.microsoft.com/de-de/windows/installieren-mobiler-apps-und-der-amazon-appstore-unter-windows-f8d0abb5-44ad-47d8-b9fb-ad6b1459ff6c"),
+        "windows11Support6": MessageLookupByLibrary.simpleMessage(
+            "Amazon Appstore in Windows 11 installieren")
       };
 }

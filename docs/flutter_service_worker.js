@@ -4,7 +4,7 @@ const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
   "404.html": "1f2f1eb37cb6cdb75ceed70b02d0393d",
-"assets/AssetManifest.json": "db19b518ebd5ce012bdbf1306c355062",
+"assets/AssetManifest.json": "3c3c3ac5ebdf1b10997168444fbf9acb",
 "assets/FontManifest.json": "dc3d03800ccca4601324923c0b1d6d57",
 "assets/fonts/MaterialIcons-Regular.otf": "e7069dfd19b331be16bed984668fe080",
 "assets/images/about/me.jpg": "327b3fc65b1f68b7c7472a9c3626c57f",
@@ -14,7 +14,9 @@ const RESOURCES = {
 "assets/images/apps/google-play-badge-de.png": "7e2066c8302de54f8fee432d143a4cc1",
 "assets/images/apps/google-play-badge-en.png": "1e91d02cf5a902f38f2923c006d79281",
 "assets/images/apps/nakbuch/app_icon.jpg": "bc8fa059a5e26537091329113f4ebd6d",
+"assets/images/apps/nakbuch/data_tab.gif": "484e8d8eb0bc0a4890682571f1e45ac7",
 "assets/images/apps/nakbuch/data_tab.mp4": "7e5e51fcebd858d1b4add05effee0f43",
+"assets/images/apps/nakbuch/expanding_app_bar.gif": "9c3629b44fc5fcc584b7b4a5f45453e2",
 "assets/images/apps/nakbuch/expanding_app_bar.mp4": "10d2079379db94dbdc6ff9994f6c639b",
 "assets/images/apps/nakbuch/material_home_blue.png": "f7203c5caca8e337002ff837129cb81c",
 "assets/images/apps/nakbuch/material_home_green.png": "a20b137376e990b99ed36d5f82c33c34",
@@ -37,6 +39,7 @@ const RESOURCES = {
 "assets/images/apps/nakbuch/NAK_Buch_squircle.png": "e86f2fc79e379b5897e963c7cbb7ef72",
 "assets/images/apps/nakbuch/quick_actions.png": "87a40ffed51d83fe8f0244274506607b",
 "assets/images/apps/nakbuch/shortcut.png": "201cfc1aab11ba3292af2af0d05e2abb",
+"assets/images/apps/nakbuch/swipe_gesture.gif": "ed69ae8559783f6e85818d4c90aa9f94",
 "assets/images/apps/nakbuch/swipe_gesture.mp4": "f69afa4d723d5c709b110a92daf1c8ba",
 "assets/images/apps/nakbuch/tab1.png": "af3c84990812605b517fcfc7fba04922",
 "assets/images/apps/nakbuch/tab1_light.png": "dc48e471d713b2b9e47b28f53e731efd",
@@ -158,9 +161,9 @@ const RESOURCES = {
 "icons/icon-512.png": "cdd688288d8e223bfc8c775c6f80303c",
 "icons/Icon-maskable-192.png": "a294f388689c3c02cec94f7ba18c7012",
 "icons/Icon-maskable-512.png": "cdd688288d8e223bfc8c775c6f80303c",
-"index.html": "434735b6c97dcad3aca3d785542cebca",
-"/": "434735b6c97dcad3aca3d785542cebca",
-"main.dart.js": "55da33c704507418e21b44315196ee4a",
+"index.html": "f727f313e235c6abcfd34721e2c88c4d",
+"/": "f727f313e235c6abcfd34721e2c88c4d",
+"main.dart.js": "72954506fcedc723e06b52f0a654a005",
 "manifest.json": "383bcada50b6d5b56736595c7588470c",
 "version.json": "009c9e65172e010890f7f65fde438006"
 };

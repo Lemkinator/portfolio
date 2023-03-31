@@ -39,7 +39,7 @@ class _ProjectsScreenState extends State<ProjectsScreen> with SingleTickerProvid
             child: SizedBox(height: 40),
           ),
           widget.category == 'media'
-              ? MediaMoreInfo()
+              ? const MediaMoreInfo()
               : widget.category == 'apps'
                   ? const AppsMoreInfo()
                   : Container(),

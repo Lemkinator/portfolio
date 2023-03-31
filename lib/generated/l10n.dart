@@ -430,10 +430,10 @@ class S {
     );
   }
 
-  /// `OneUI`
+  /// `One UI`
   String get oneui {
     return Intl.message(
-      'OneUI',
+      'One UI',
       name: 'oneui',
       desc: '',
       args: [],
@@ -705,6 +705,416 @@ class S {
     return Intl.message(
       'Setup',
       name: 'setup',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Links`
+  String get links {
+    return Intl.message(
+      'Links',
+      name: 'links',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Privacy Policy`
+  String get privacyPolicy {
+    return Intl.message(
+      'Privacy Policy',
+      name: 'privacyPolicy',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Source Code`
+  String get sourceCode {
+    return Intl.message(
+      'Source Code',
+      name: 'sourceCode',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Features`
+  String get features {
+    return Intl.message(
+      'Features',
+      name: 'features',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Other Features`
+  String get otherFeatures {
+    return Intl.message(
+      'Other Features',
+      name: 'otherFeatures',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Free`
+  String get free {
+    return Intl.message(
+      'Free',
+      name: 'free',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Screenshots`
+  String get screenshots {
+    return Intl.message(
+      'Screenshots',
+      name: 'screenshots',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Windows 11 support`
+  String get windows11Support {
+    return Intl.message(
+      'Windows 11 support',
+      name: 'windows11Support',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `To use mobile apps on a Windows 11 PC, the`
+  String get windows11Support1 {
+    return Intl.message(
+      'To use mobile apps on a Windows 11 PC, the',
+      name: 'windows11Support1',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `ms-windows-store://pdp/?productid=9NJHK44TTKSX`
+  String get windows11Support2 {
+    return Intl.message(
+      'ms-windows-store://pdp/?productid=9NJHK44TTKSX',
+      name: 'windows11Support2',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Amazon Appstore`
+  String get windows11Support3 {
+    return Intl.message(
+      'Amazon Appstore',
+      name: 'windows11Support3',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `must be installed.`
+  String get windows11Support4 {
+    return Intl.message(
+      'must be installed.',
+      name: 'windows11Support4',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `https://support.microsoft.com/en-us/topic/f8d0abb5-44ad-47d8-b9fb-ad6b1459ff6c`
+  String get windows11Support5 {
+    return Intl.message(
+      'https://support.microsoft.com/en-us/topic/f8d0abb5-44ad-47d8-b9fb-ad6b1459ff6c',
+      name: 'windows11Support5',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Install Amazon Appstore on Windows 11`
+  String get windows11Support6 {
+    return Intl.message(
+      'Install Amazon Appstore on Windows 11',
+      name: 'windows11Support6',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `This app is in no way affiliated with the New Apostolic Church or Verlag Friedrich Bischoff GmbH and contains only the copyright-free texts from the following books:`
+  String get nakBuchDisclaimer {
+    return Intl.message(
+      'This app is in no way affiliated with the New Apostolic Church or Verlag Friedrich Bischoff GmbH and contains only the copyright-free texts from the following books:',
+      name: 'nakBuchDisclaimer',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Gesangbuch (320 of 438 songs)`
+  String get nakBuchDisclaimer1 {
+    return Intl.message(
+      'Gesangbuch (320 of 438 songs)',
+      name: 'nakBuchDisclaimer1',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Chorbuch (206 of 462 songs)`
+  String get nakBuchDisclaimer2 {
+    return Intl.message(
+      'Chorbuch (206 of 462 songs)',
+      name: 'nakBuchDisclaimer2',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Jugendliederbuch (41 of 102 songs)`
+  String get nakBuchDisclaimer3 {
+    return Intl.message(
+      'Jugendliederbuch (41 of 102 songs)',
+      name: 'nakBuchDisclaimer3',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Ergänzungsheft zum Jugendliederbuch (3 of 20 songs)`
+  String get nakBuchDisclaimer4 {
+    return Intl.message(
+      'Ergänzungsheft zum Jugendliederbuch (3 of 20 songs)',
+      name: 'nakBuchDisclaimer4',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `For the remaining songs, the rights are still held by the authors, which is why they cannot be displayed or can only be displayed in part. The information on copyright has been checked with great care. If I have unwittingly made mistakes, please let me know and I will follow up immediately.`
+  String get nakBuchDisclaimer5 {
+    return Intl.message(
+      'For the remaining songs, the rights are still held by the authors, which is why they cannot be displayed or can only be displayed in part. The information on copyright has been checked with great care. If I have unwittingly made mistakes, please let me know and I will follow up immediately.',
+      name: 'nakBuchDisclaimer5',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `The administration of the rights is, among others, the responsibility of Verlag Friedrich Bischoff GmbH, which has itself published a (paid) app for the Gesangbuch and a (paid) app for the Chorbuch.`
+  String get nakBuchDisclaimer6 {
+    return Intl.message(
+      'The administration of the rights is, among others, the responsibility of Verlag Friedrich Bischoff GmbH, which has itself published a (paid) app for the Gesangbuch and a (paid) app for the Chorbuch.',
+      name: 'nakBuchDisclaimer6',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Dark Mode (automatically adapts to the system settings)`
+  String get darkModeAutomaticallyAdaptsToTheSystemSettings {
+    return Intl.message(
+      'Dark Mode (automatically adapts to the system settings)',
+      name: 'darkModeAutomaticallyAdaptsToTheSystemSettings',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Quick setting for mute/do not disturb mode`
+  String get nakBuchQuickSettingForMutedoNotDisturbMode {
+    return Intl.message(
+      'Quick setting for mute/do not disturb mode',
+      name: 'nakBuchQuickSettingForMutedoNotDisturbMode',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Pleasant text view`
+  String get nakBuchPleasantTextView {
+    return Intl.message(
+      'Pleasant text view',
+      name: 'nakBuchPleasantTextView',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Favorites`
+  String get favorites {
+    return Intl.message(
+      'Favorites',
+      name: 'favorites',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Notes`
+  String get notes {
+    return Intl.message(
+      'Notes',
+      name: 'notes',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Date function (sung on...)`
+  String get dateFunctionSungOn {
+    return Intl.message(
+      'Date function (sung on...)',
+      name: 'dateFunctionSungOn',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `History`
+  String get history {
+    return Intl.message(
+      'History',
+      name: 'history',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Wear OS support`
+  String get wearOsSupport {
+    return Intl.message(
+      'Wear OS support',
+      name: 'wearOsSupport',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Forgotten your smartphone? No problem, the text contents of the app can be displayed on the smartwatch without any problems (in a pleasant design).`
+  String get wearOsSupportText {
+    return Intl.message(
+      'Forgotten your smartphone? No problem, the text contents of the app can be displayed on the smartwatch without any problems (in a pleasant design).',
+      name: 'wearOsSupportText',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `https://www.amazon.com/gp/product/B0BJ13C4RH`
+  String get nakBuchAmazonAppStoreLink {
+    return Intl.message(
+      'https://www.amazon.com/gp/product/B0BJ13C4RH',
+      name: 'nakBuchAmazonAppStoreLink',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `NAK Buch in Amazon Appstore`
+  String get nakBuchAmazonAppStore {
+    return Intl.message(
+      'NAK Buch in Amazon Appstore',
+      name: 'nakBuchAmazonAppStore',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `NAK Buch was developed according to Samsung's One UI guidelines. For example, the title bar can be "dragged down" on large devices on any screen to ensure comfortable (one-handed) operation of the top buttons.`
+  String get nakBuchOneUi {
+    return Intl.message(
+      'NAK Buch was developed according to Samsung\'s One UI guidelines. For example, the title bar can be "dragged down" on large devices on any screen to ensure comfortable (one-handed) operation of the top buttons.',
+      name: 'nakBuchOneUi',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Swipe Songs`
+  String get nakBuchSwipeSongs {
+    return Intl.message(
+      'Swipe Songs',
+      name: 'nakBuchSwipeSongs',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Swipe to go to the next/previous song. Just like a real book.`
+  String get nakBuchSwipeSongsText {
+    return Intl.message(
+      'Swipe to go to the next/previous song. Just like a real book.',
+      name: 'nakBuchSwipeSongsText',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Data Tab`
+  String get nakBuchDataTab {
+    return Intl.message(
+      'Data Tab',
+      name: 'nakBuchDataTab',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Your personal data at a glance.`
+  String get nakBuchDataTabText {
+    return Intl.message(
+      'Your personal data at a glance.',
+      name: 'nakBuchDataTabText',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Shortcuts`
+  String get nakBuchShortcuts {
+    return Intl.message(
+      'Shortcuts',
+      name: 'nakBuchShortcuts',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Don't like all books in one app? With NAK Buch you can create a shortcut for each book.`
+  String get nakBuchShortcutsText {
+    return Intl.message(
+      'Don\'t like all books in one app? With NAK Buch you can create a shortcut for each book.',
+      name: 'nakBuchShortcutsText',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Quick Actions`
+  String get nakBuchQuickActions {
+    return Intl.message(
+      'Quick Actions',
+      name: 'nakBuchQuickActions',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `To quickly mute your smartphone, activate Do Not Disturb mode or open the official app if the full lyrics cannot displayed.`
+  String get nakBuchQuickActionsText {
+    return Intl.message(
+      'To quickly mute your smartphone, activate Do Not Disturb mode or open the official app if the full lyrics cannot displayed.',
+      name: 'nakBuchQuickActionsText',
       desc: '',
       args: [],
     );
