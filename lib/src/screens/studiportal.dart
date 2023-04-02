@@ -15,19 +15,17 @@ class StudiportalScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final List<Widget> mobileImages = [
       'images/apps/studiportal/mobile1.png',
-      'images/apps/studiportal/mobile2.png',
       'images/apps/studiportal/mobile3.png',
       'images/apps/studiportal/mobile4.png',
       'images/apps/studiportal/mobile5.png',
-      'images/apps/studiportal/mobile6.png',
     ]
         .map((file) => Padding(
-      padding: const EdgeInsets.only(bottom: 20),
-      child: ClipRRect(
-        borderRadius: const BorderRadius.all(Radius.circular(16)),
-        child: Image.asset(file, fit: BoxFit.cover),
-      ),
-    ))
+              padding: const EdgeInsets.only(bottom: 20),
+              child: ClipRRect(
+                borderRadius: const BorderRadius.all(Radius.circular(16)),
+                child: Image.asset(file, fit: BoxFit.cover),
+              ),
+            ))
         .toList();
 
     final themeData = Theme.of(context);
@@ -37,29 +35,14 @@ class StudiportalScreen extends StatelessWidget {
         subtitle: S.of(context).studiportalDescription,
         backgroundImage: 'images/apps/studiportal/Vorstellungsgrafik.png',
         appIcon: 'images/apps/studiportal/Studiportal_squircle.png',
-        playStoreLink: '',
+        playStoreLink: 'https://play.google.com/store/apps/details?id=de.lemke.studiportal&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1',
         childs: <Widget>[
-          p(themeData, S.of(context).nakBuchDisclaimer),
-          const SizedBox(height: 5),
-          li(themeData, S.of(context).nakBuchDisclaimer1),
-          li(themeData, S.of(context).nakBuchDisclaimer2),
-          li(themeData, S.of(context).nakBuchDisclaimer3),
-          li(themeData, S.of(context).nakBuchDisclaimer4),
-          const SizedBox(height: 10),
-          p(themeData, S.of(context).nakBuchDisclaimer5),
-          const SizedBox(height: 5),
-          p(themeData, S.of(context).nakBuchDisclaimer6),
+          p(themeData, S.of(context).studiportalDisclaimer),
           const SizedBox(height: 40),
           h1(themeData, S.of(context).features),
           const SizedBox(height: 10),
           li(themeData, S.of(context).free),
           li(themeData, S.of(context).darkModeAutomaticallyAdaptsToTheSystemSettings),
-          li(themeData, S.of(context).nakBuchQuickSettingForMutedoNotDisturbMode),
-          li(themeData, S.of(context).nakBuchPleasantTextView),
-          li(themeData, S.of(context).favorites),
-          li(themeData, S.of(context).notes),
-          li(themeData, S.of(context).dateFunctionSungOn),
-          li(themeData, S.of(context).history),
           const SizedBox(height: 40),
           h1(themeData, S.of(context).screenshots),
           const SizedBox(height: 10),
@@ -111,14 +94,14 @@ class StudiportalScreen extends StatelessWidget {
             alignment: Alignment.centerLeft,
             child: TextButton(
                 onPressed: () {
-                  launchUrl(Uri.parse(S.of(context).nakBuchAmazonAppStoreLink));
+                  launchUrl(Uri.parse(S.of(context).studiportalAmazonAppStoreLink));
                 },
-                child: Text(S.of(context).nakBuchAmazonAppStore)),
+                child: Text(S.of(context).studiportalAmazonAppStore)),
           ),
           const SizedBox(height: 40),
-          h1(themeData, S.of(context).oneui),
+          h1(themeData, S.of(context).oneUi),
           const SizedBox(height: 10),
-          p(themeData, S.of(context).nakBuchOneUi),
+          p(themeData, S.of(context).studiportalOneUi),
           const SizedBox(height: 10),
           Align(
             alignment: Alignment.centerLeft,
@@ -127,7 +110,7 @@ class StudiportalScreen extends StatelessWidget {
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(16),
                 child: Image.asset(
-                  'images/apps/nakbuch/expanding_app_bar.gif',
+                  'images/apps/studiportal/expanding_app_bar.gif',
                   fit: BoxFit.cover,
                 ),
               ),
@@ -136,27 +119,9 @@ class StudiportalScreen extends StatelessWidget {
           const SizedBox(height: 60),
           h1(themeData, S.of(context).otherFeatures),
           const SizedBox(height: 30),
-          h2(themeData, S.of(context).nakBuchSwipeSongs),
+          h2(themeData, S.of(context).notifications),
           const SizedBox(height: 10),
-          p(themeData, S.of(context).nakBuchSwipeSongsText),
-          const SizedBox(height: 10),
-          Align(
-            alignment: Alignment.centerLeft,
-            child: ConstrainedBox(
-              constraints: const BoxConstraints(maxWidth: 400),
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(16),
-                child: Image.asset(
-                  'images/apps/nakbuch/swipe_gesture.gif',
-                  fit: BoxFit.cover,
-                ),
-              ),
-            ),
-          ),
-          const SizedBox(height: 30),
-          h2(themeData, S.of(context).nakBuchDataTab),
-          const SizedBox(height: 10),
-          p(themeData, S.of(context).nakBuchDataTabText),
+          p(themeData, S.of(context).studiportalNotifications),
           const SizedBox(height: 10),
           Align(
             alignment: Alignment.centerLeft,
@@ -165,45 +130,7 @@ class StudiportalScreen extends StatelessWidget {
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(16),
                 child: Image.asset(
-                  'images/apps/nakbuch/data_tab.gif',
-                  fit: BoxFit.cover,
-                ),
-              ),
-            ),
-          ),
-          const SizedBox(height: 30),
-          h2(themeData, S.of(context).nakBuchShortcuts),
-          const SizedBox(height: 10),
-          p(themeData, S.of(context).nakBuchShortcutsText),
-          const SizedBox(height: 10),
-          Align(
-            alignment: Alignment.centerLeft,
-            child: ConstrainedBox(
-              constraints: const BoxConstraints(maxWidth: 400),
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(16),
-                child: Image.asset(
-                  'images/apps/nakbuch/shortcut.png',
-                  fit: BoxFit.cover,
-                ),
-              ),
-            ),
-          ),
-          const SizedBox(height: 30),
-          h2(themeData, S.of(context).nakBuchQuickActions),
-          const SizedBox(height: 10),
-          p(themeData, S.of(context).nakBuchQuickActions),
-          const SizedBox(height: 10),
-          p(themeData, S.of(context).nakBuchQuickActionsText),
-          const SizedBox(height: 10),
-          Align(
-            alignment: Alignment.centerLeft,
-            child: ConstrainedBox(
-              constraints: const BoxConstraints(maxWidth: 400),
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(16),
-                child: Image.asset(
-                  'images/apps/nakbuch/quick_actions.png',
+                  'images/apps/studiportal/mobile2.png',
                   fit: BoxFit.cover,
                 ),
               ),
@@ -216,14 +143,14 @@ class StudiportalScreen extends StatelessWidget {
             children: [
               FilledButton(
                 onPressed: () {
-                  RouteStateScope.of(context).go('/apps/nakbuch/privacy-policy');
+                  RouteStateScope.of(context).go('/apps/studiportal/privacy-policy');
                 },
                 child: Text(S.of(context).privacyPolicy),
               ),
               const SizedBox(width: 10),
               FilledButton(
                 onPressed: () {
-                  launchUrl(Uri.parse('https://github.com/Lemkinator/NAK-Buch'));
+                  launchUrl(Uri.parse('https://github.com/Lemkinator/Studiportal'));
                 },
                 child: Text(S.of(context).sourceCode),
               ),
@@ -241,16 +168,45 @@ class StudiportalPrivacyPolicyScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('${S.of(context).studiportal} ${S.of(context).privacyPolicy}'),
-      ),
-      body: Center(
-        child: Text(
-          '${S.of(context).studiportal} ${S.of(context).privacyPolicy}',
-          style: Theme.of(context).textTheme.headlineMedium,
+    final themeData = Theme.of(context);
+    return ScreenLayout(
+      title: S.of(context).privacyPolicy,
+      childs: [
+        h2(themeData, S.of(context).app),
+        const SizedBox(height: 10),
+        p(themeData, S.of(context).studiportal),
+        const SizedBox(height: 40),
+        h2(themeData, S.of(context).provider),
+        const SizedBox(height: 10),
+        p(themeData, S.of(context).leo),
+        const SizedBox(height: 10),
+        Wrap(
+          alignment: WrapAlignment.start,
+          runAlignment: WrapAlignment.center,
+          crossAxisAlignment: WrapCrossAlignment.center,
+          children: [
+            p(themeData, S.of(context).email),
+            TextButton(
+                onPressed: () {
+                  launchUrl(Uri(
+                    scheme: 'mailto',
+                    path: S.of(context).studiportalEmail,
+                    //queryParameters: {'subject': 'Example'}
+                  ));
+                },
+                child: Text(S.of(context).studiportalEmail)),
+          ],
         ),
-      ),
+        const SizedBox(height: 40),
+        h2(themeData, S.of(context).privacyInformation),
+        const SizedBox(height: 10),
+        p(themeData, S.of(context).PrivacyInformationNoDataCollected),
+        const SizedBox(height: 40),
+        h2(themeData, S.of(context).statusOfTheDataProtectionInformation),
+        const SizedBox(height: 10),
+        p(themeData, S.of(context).studiportalStatusPrivacyInformation),
+        const SizedBox(height: 40),
+      ],
     );
   }
 }

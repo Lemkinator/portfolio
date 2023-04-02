@@ -9,7 +9,7 @@ final libraryInstance = Library()
     description: S.current.sudokuDescription,
     image: 'images/apps/sudoku/app_icon.png',
     route: '/apps/sudoku',
-    tags: [S.current.apps, S.current.oneui, S.current.game],
+    tags: [S.current.apps, S.current.oneUi, S.current.game],
     date: DateTime(2022, 8),
   )
   ..addProject(
@@ -29,7 +29,7 @@ final libraryInstance = Library()
     description: S.current.studiportalDescription,
     image: 'images/apps/studiportal/app_icon.png',
     route: '/apps/studiportal',
-    tags: [S.current.apps, S.current.oneui],
+    tags: [S.current.apps, S.current.oneUi],
     date: DateTime(2022, 7),
   )
   ..addProject(
@@ -39,7 +39,7 @@ final libraryInstance = Library()
     description: S.current.nakBuchDescription,
     image: 'images/apps/nakbuch/app_icon.jpg',
     route: '/apps/nakbuch',
-    tags: [S.current.apps, S.current.oneui],
+    tags: [S.current.apps, S.current.oneUi],
     date: DateTime(2021, 11),
   )
   ..addProject(

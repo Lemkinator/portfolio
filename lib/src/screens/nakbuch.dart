@@ -153,7 +153,7 @@ class NAKBuchScreen extends StatelessWidget {
                 child: Text(S.of(context).nakBuchAmazonAppStore)),
           ),
           const SizedBox(height: 40),
-          h1(themeData, S.of(context).oneui),
+          h1(themeData, S.of(context).oneUi),
           const SizedBox(height: 10),
           p(themeData, S.of(context).nakBuchOneUi),
           const SizedBox(height: 10),
@@ -282,12 +282,41 @@ class NAKBuchPrivacyPolicyScreen extends StatelessWidget {
     return ScreenLayout(
       title: S.of(context).privacyPolicy,
       childs: [
-        const SizedBox(height: 40),
-        h2(themeData, 'App'),
+        h2(themeData, S.of(context).app),
         const SizedBox(height: 10),
         p(themeData, S.of(context).nakBuch),
         const SizedBox(height: 40),
-        h2(themeData, 'Anbieter/Betreiber'),
+        h2(themeData, S.of(context).provider),
+        const SizedBox(height: 10),
+        p(themeData, S.of(context).leo),
+        const SizedBox(height: 10),
+        Wrap(
+          alignment: WrapAlignment.start,
+          runAlignment: WrapAlignment.center,
+          crossAxisAlignment: WrapCrossAlignment.center,
+          children: [
+            p(themeData, S.of(context).email),
+            TextButton(
+                onPressed: () {
+                  launchUrl(Uri(
+                      scheme: 'mailto',
+                      path: S.of(context).nakbuchEmail,
+                      //queryParameters: {'subject': 'Example'}
+                    )
+                  );
+                },
+                child: Text(S.of(context).nakbuchEmail)),
+          ],
+        ),
+        const SizedBox(height: 40),
+        h2(themeData, S.of(context).privacyInformation),
+        const SizedBox(height: 10),
+        p(themeData, S.of(context).PrivacyInformationNoDataCollected),
+        const SizedBox(height: 40),
+        h2(themeData, S.of(context).statusOfTheDataProtectionInformation),
+        const SizedBox(height: 10),
+        p(themeData, S.of(context).nakBuchStatusPrivacyInformation),
+        const SizedBox(height: 40),
       ],
     );
   }

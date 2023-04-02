@@ -10,20 +10,25 @@ class AppsMoreInfo extends StatelessWidget {
       color: Theme.of(context).colorScheme.secondary,
     );
     return SliverPadding(
-      padding: const EdgeInsets.all(16),
-      sliver: SliverList(
-        delegate: SliverChildListDelegate(<Widget>[
-          Text(
-            '',
-            style: headlineLarge,
+      padding: const EdgeInsets.symmetric(horizontal: 16),
+      sliver: SliverToBoxAdapter(
+        child: Center(
+          child: ConstrainedBox(
+            constraints: const BoxConstraints(maxWidth: 1000),
+            child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: <Widget>[
+              Text(
+                '',
+                style: headlineLarge,
+              ),
+              const SizedBox(height: 5),
+              Text(
+                '',
+                style: textTheme.bodyLarge,
+              ),
+              const SizedBox(height: 40),
+            ]),
           ),
-          const SizedBox(height: 5),
-          Text(
-            '',
-            style: textTheme.bodyLarge,
-          ),
-          const SizedBox(height: 40),
-        ]),
+        ),
       ),
     );
   }

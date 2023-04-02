@@ -70,6 +70,16 @@ class S {
     );
   }
 
+  /// `Leonard Lemke`
+  String get leo {
+    return Intl.message(
+      'Leonard Lemke',
+      name: 'leo',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Explore`
   String get explore {
     return Intl.message(
@@ -230,10 +240,10 @@ class S {
     );
   }
 
-  /// `Those looking for quick success should not program, but chop wood.`
+  /// `"Those looking for quick success should not program, but chop wood."`
   String get mySlogan {
     return Intl.message(
-      'Those looking for quick success should not program, but chop wood.',
+      '"Those looking for quick success should not program, but chop wood."',
       name: 'mySlogan',
       desc: '',
       args: [],
@@ -431,10 +441,10 @@ class S {
   }
 
   /// `One UI`
-  String get oneui {
+  String get oneUi {
     return Intl.message(
       'One UI',
-      name: 'oneui',
+      name: 'oneUi',
       desc: '',
       args: [],
     );
@@ -1115,6 +1125,656 @@ class S {
     return Intl.message(
       'To quickly mute your smartphone, activate Do Not Disturb mode or open the official app if the full lyrics cannot displayed.',
       name: 'nakBuchQuickActionsText',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Email: `
+  String get email {
+    return Intl.message(
+      'Email: ',
+      name: 'email',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `App`
+  String get app {
+    return Intl.message(
+      'App',
+      name: 'app',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Provider/Operator`
+  String get provider {
+    return Intl.message(
+      'Provider/Operator',
+      name: 'provider',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `nakbuch@leonard-lemke.com`
+  String get nakbuchEmail {
+    return Intl.message(
+      'nakbuch@leonard-lemke.com',
+      name: 'nakbuchEmail',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Privacy Information`
+  String get privacyInformation {
+    return Intl.message(
+      'Privacy Information',
+      name: 'privacyInformation',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `The app does not collect or share user data.`
+  String get PrivacyInformationNoDataCollected {
+    return Intl.message(
+      'The app does not collect or share user data.',
+      name: 'PrivacyInformationNoDataCollected',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Status of the data protection information`
+  String get statusOfTheDataProtectionInformation {
+    return Intl.message(
+      'Status of the data protection information',
+      name: 'statusOfTheDataProtectionInformation',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `We review our privacy information on a regular basis. We reserve the right to change the privacy notice at any time with or without notice. Please check back periodically to be notified of any changes. This statement was last updated on 04/19/2022.`
+  String get nakBuchStatusPrivacyInformation {
+    return Intl.message(
+      'We review our privacy information on a regular basis. We reserve the right to change the privacy notice at any time with or without notice. Please check back periodically to be notified of any changes. This statement was last updated on 04/19/2022.',
+      name: 'nakBuchStatusPrivacyInformation',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `This app is in no way affiliated with Furtwangen University and is only used to display the data from the Studiportal. The logo is used with the kind permission of the Strategy and Communication Department of Furtwangen University.`
+  String get studiportalDisclaimer {
+    return Intl.message(
+      'This app is in no way affiliated with Furtwangen University and is only used to display the data from the Studiportal. The logo is used with the kind permission of the Strategy and Communication Department of Furtwangen University.',
+      name: 'studiportalDisclaimer',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Studiportal in Amazon Appstore`
+  String get studiportalAmazonAppStore {
+    return Intl.message(
+      'Studiportal in Amazon Appstore',
+      name: 'studiportalAmazonAppStore',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `https://www.amazon.com/gp/product/B0BW6HX7RG`
+  String get studiportalAmazonAppStoreLink {
+    return Intl.message(
+      'https://www.amazon.com/gp/product/B0BW6HX7RG',
+      name: 'studiportalAmazonAppStoreLink',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Studiportal was developed according to Samsung's One UI guidelines. For example, the title bar can be "dragged down" on large devices on any screen to ensure comfortable (one-handed) operation of the top buttons.`
+  String get studiportalOneUi {
+    return Intl.message(
+      'Studiportal was developed according to Samsung\'s One UI guidelines. For example, the title bar can be "dragged down" on large devices on any screen to ensure comfortable (one-handed) operation of the top buttons.',
+      name: 'studiportalOneUi',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Notifications`
+  String get notifications {
+    return Intl.message(
+      'Notifications',
+      name: 'notifications',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Receive a notification when changes occur in Studiportal.`
+  String get studiportalNotifications {
+    return Intl.message(
+      'Receive a notification when changes occur in Studiportal.',
+      name: 'studiportalNotifications',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `studiportal@leonard-lemke.com`
+  String get studiportalEmail {
+    return Intl.message(
+      'studiportal@leonard-lemke.com',
+      name: 'studiportalEmail',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `We review our privacy information on a regular basis. We reserve the right to change the privacy notice at any time with or without notice. Please check back periodically to be notified of any changes. This statement was last updated on 11/14/2022.`
+  String get studiportalStatusPrivacyInformation {
+    return Intl.message(
+      'We review our privacy information on a regular basis. We reserve the right to change the privacy notice at any time with or without notice. Please check back periodically to be notified of any changes. This statement was last updated on 11/14/2022.',
+      name: 'studiportalStatusPrivacyInformation',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Sudoku fans listen up! Here is the ultimate app that will take your brain power to the next level. With thousands of sudokus in different levels of difficulty, there's something for everyone, from beginners to professionals. Numerous levels ensure ongoing fun and with the Google Play Games integration, you can unlock exciting achievements, compete with your friends and fight for a good rank in various leaderboards.`
+  String get sudokuText1 {
+    return Intl.message(
+      'Sudoku fans listen up! Here is the ultimate app that will take your brain power to the next level. With thousands of sudokus in different levels of difficulty, there\'s something for everyone, from beginners to professionals. Numerous levels ensure ongoing fun and with the Google Play Games integration, you can unlock exciting achievements, compete with your friends and fight for a good rank in various leaderboards.',
+      name: 'sudokuText1',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `But that's not all! The app also offers daily challenges to keep you fit. You can easily track your progress with comprehensive statistics and with the possibility to play offline, you'll be ready to challenge your brain anytime, anywhere.`
+  String get sudokuText2 {
+    return Intl.message(
+      'But that\'s not all! The app also offers daily challenges to keep you fit. You can easily track your progress with comprehensive statistics and with the possibility to play offline, you\'ll be ready to challenge your brain anytime, anywhere.',
+      name: 'sudokuText2',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `So what are you waiting for? Download the app from the Play Store now and let your brain shine!`
+  String get sudokuText3 {
+    return Intl.message(
+      'So what are you waiting for? Download the app from the Play Store now and let your brain shine!',
+      name: 'sudokuText3',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Statistics`
+  String get statistics {
+    return Intl.message(
+      'Statistics',
+      name: 'statistics',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Sudoku in Amazon Appstore`
+  String get sudokuAmazonAppStore {
+    return Intl.message(
+      'Sudoku in Amazon Appstore',
+      name: 'sudokuAmazonAppStore',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `https://www.amazon.com/gp/product/B0BW6JPCB4`
+  String get sudokuAmazonAppStoreLink {
+    return Intl.message(
+      'https://www.amazon.com/gp/product/B0BW6JPCB4',
+      name: 'sudokuAmazonAppStoreLink',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Sudoku was developed according to Samsung's One UI guidelines. For example, the title bar can be "dragged down" on large devices on any screen to ensure comfortable (one-handed) operation of the top buttons.`
+  String get sudokuOneUi {
+    return Intl.message(
+      'Sudoku was developed according to Samsung\'s One UI guidelines. For example, the title bar can be "dragged down" on large devices on any screen to ensure comfortable (one-handed) operation of the top buttons.',
+      name: 'sudokuOneUi',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Google Play Games`
+  String get googlePlayGames {
+    return Intl.message(
+      'Google Play Games',
+      name: 'googlePlayGames',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `With Google Play Games integration, you can unlock exciting achievements, compete with your friends and earn a good rank in various leaderboards.`
+  String get googlePlayGamesText {
+    return Intl.message(
+      'With Google Play Games integration, you can unlock exciting achievements, compete with your friends and earn a good rank in various leaderboards.',
+      name: 'googlePlayGamesText',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Sudoku Level`
+  String get sudokuLevel {
+    return Intl.message(
+      'Sudoku Level',
+      name: 'sudokuLevel',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Play Sudoku levels with increasing difficulty and track your level progress.`
+  String get sudokuLevelText {
+    return Intl.message(
+      'Play Sudoku levels with increasing difficulty and track your level progress.',
+      name: 'sudokuLevelText',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Daily Sudoku`
+  String get dailySudoku {
+    return Intl.message(
+      'Daily Sudoku',
+      name: 'dailySudoku',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Play Sudoku every day and track your daily progress.`
+  String get dailySudokuText {
+    return Intl.message(
+      'Play Sudoku every day and track your daily progress.',
+      name: 'dailySudokuText',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `sudoku@leonard-lemke.com`
+  String get sudokuEmail {
+    return Intl.message(
+      'sudoku@leonard-lemke.com',
+      name: 'sudokuEmail',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `https://support.google.com/googleplay/topic/3114802?ref_topic=2952998`
+  String get googlePlayGamesLink {
+    return Intl.message(
+      'https://support.google.com/googleplay/topic/3114802?ref_topic=2952998',
+      name: 'googlePlayGamesLink',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `The data mentioned below is collected by`
+  String get sudokuPrivacyPolicy1 {
+    return Intl.message(
+      'The data mentioned below is collected by',
+      name: 'sudokuPrivacyPolicy1',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `,`
+  String get sudokuPrivacyPolicy2 {
+    return Intl.message(
+      ',',
+      name: 'sudokuPrivacyPolicy2',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// ` provided that the user logs in or has activated the automatic login. `
+  String get sudokuPrivacyPolicy3 {
+    return Intl.message(
+      ' provided that the user logs in or has activated the automatic login. ',
+      name: 'sudokuPrivacyPolicy3',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `The Google Play Games services provide access for sign-in as well as services for game apps. Further settings, as well as the deletion of the data can be made in the Play Games profile.`
+  String get sudokuPrivacyPolicy4 {
+    return Intl.message(
+      'The Google Play Games services provide access for sign-in as well as services for game apps. Further settings, as well as the deletion of the data can be made in the Play Games profile.',
+      name: 'sudokuPrivacyPolicy4',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Play Games profile privacy & other settings`
+  String get playGamesProfilePrivacyOtherSettings {
+    return Intl.message(
+      'Play Games profile privacy & other settings',
+      name: 'playGamesProfilePrivacyOtherSettings',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `https://support.google.com/googleplay/answer/3129346?ref_topic=9167070`
+  String get playGamesProfilePrivacyOtherSettingsLink {
+    return Intl.message(
+      'https://support.google.com/googleplay/answer/3129346?ref_topic=9167070',
+      name: 'playGamesProfilePrivacyOtherSettingsLink',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Delete your Play Games profile and data`
+  String get deleteYourPlayGamesProfileAndData {
+    return Intl.message(
+      'Delete your Play Games profile and data',
+      name: 'deleteYourPlayGamesProfileAndData',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `https://support.google.com/googleplay/answer/9130646`
+  String get deleteYourPlayGamesProfileAndDataLink {
+    return Intl.message(
+      'https://support.google.com/googleplay/answer/9130646',
+      name: 'deleteYourPlayGamesProfileAndDataLink',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Data encryption`
+  String get dataEncryption {
+    return Intl.message(
+      'Data encryption',
+      name: 'dataEncryption',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `For the collected end-user data listed on this page, Play Games Services encrypts the data in transit using HTTPS.`
+  String get sudokuDataEncryption {
+    return Intl.message(
+      'For the collected end-user data listed on this page, Play Games Services encrypts the data in transit using HTTPS.',
+      name: 'sudokuDataEncryption',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Data collected`
+  String get dataCollected {
+    return Intl.message(
+      'Data collected',
+      name: 'dataCollected',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Gamer Identity (Gamertag, avatar), analytics and diagnostics data and app activities (e.g. achievements, scores).`
+  String get sudokuDataCollected {
+    return Intl.message(
+      'Gamer Identity (Gamertag, avatar), analytics and diagnostics data and app activities (e.g. achievements, scores).',
+      name: 'sudokuDataCollected',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Data deletion`
+  String get dataDeletion {
+    return Intl.message(
+      'Data deletion',
+      name: 'dataDeletion',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Users can delete their account and all associated games data collected by Google through their`
+  String get sudokuDataDeletion1 {
+    return Intl.message(
+      'Users can delete their account and all associated games data collected by Google through their',
+      name: 'sudokuDataDeletion1',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Play Games profile`
+  String get googlePlayGamesProfile {
+    return Intl.message(
+      'Play Games profile',
+      name: 'googlePlayGamesProfile',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `https://play.google.com/games/profile`
+  String get googlePlayGamesProfileLink {
+    return Intl.message(
+      'https://play.google.com/games/profile',
+      name: 'googlePlayGamesProfileLink',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Google MyAccount`
+  String get googleMyaccount {
+    return Intl.message(
+      'Google MyAccount',
+      name: 'googleMyaccount',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `https://myaccount.google.com/`
+  String get googleMyaccountLink {
+    return Intl.message(
+      'https://myaccount.google.com/',
+      name: 'googleMyaccountLink',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `or`
+  String get sudokuDataDeletion2 {
+    return Intl.message(
+      'or',
+      name: 'sudokuDataDeletion2',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `.`
+  String get sudokuDataDeletion3 {
+    return Intl.message(
+      '.',
+      name: 'sudokuDataDeletion3',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `If Google collects Play Games Services data for an individual game, users can delete the data through their`
+  String get sudokuDataDeletion4 {
+    return Intl.message(
+      'If Google collects Play Games Services data for an individual game, users can delete the data through their',
+      name: 'sudokuDataDeletion4',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `.`
+  String get sudokuDataDeletion5 {
+    return Intl.message(
+      '.',
+      name: 'sudokuDataDeletion5',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `We review our privacy information on a regular basis. We reserve the right to change the privacy notice at any time with or without notice. Please check back periodically to be notified of any changes. This statement was last updated on 12/19/2022.`
+  String get sudokuStatusPrivacyInformation {
+    return Intl.message(
+      'We review our privacy information on a regular basis. We reserve the right to change the privacy notice at any time with or without notice. Please check back periodically to be notified of any changes. This statement was last updated on 12/19/2022.',
+      name: 'sudokuStatusPrivacyInformation',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `In Memoriam\nRS3`
+  String get lightUtopiaSubtitle {
+    return Intl.message(
+      'In Memoriam\nRS3',
+      name: 'lightUtopiaSubtitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Impressions`
+  String get impressions {
+    return Intl.message(
+      'Impressions',
+      name: 'impressions',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Video`
+  String get video {
+    return Intl.message(
+      'Video',
+      name: 'video',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `In Memoriam???`
+  String get inMemoriam {
+    return Intl.message(
+      'In Memoriam???',
+      name: 'inMemoriam',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `This is the last video with the Audi RS3, as it has now been sold...`
+  String get lightUtopiaInMemoriamText1 {
+    return Intl.message(
+      'This is the last video with the Audi RS3, as it has now been sold...',
+      name: 'lightUtopiaInMemoriamText1',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Watch out, kids! This is what marriage does to you...`
+  String get lightUtopiaInMemoriamText2 {
+    return Intl.message(
+      'Watch out, kids! This is what marriage does to you...',
+      name: 'lightUtopiaInMemoriamText2',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `A media project started for fun...`
+  String get accelerateSubtitle {
+    return Intl.message(
+      'A media project started for fun...',
+      name: 'accelerateSubtitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Trailer`
+  String get trailer {
+    return Intl.message(
+      'Trailer',
+      name: 'trailer',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Driver |`
+  String get driver {
+    return Intl.message(
+      'Driver |',
+      name: 'driver',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Credits`
+  String get credits {
+    return Intl.message(
+      'Credits',
+      name: 'credits',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Directed by`
+  String get directedBy {
+    return Intl.message(
+      'Directed by',
+      name: 'directedBy',
       desc: '',
       args: [],
     );

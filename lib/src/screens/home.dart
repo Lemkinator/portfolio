@@ -28,7 +28,7 @@ class HomeScaffold extends StatelessWidget {
     return Scaffold(
         resizeToAvoidBottomInset: false,
         appBar: AppBar(
-          title: Text('Leonard Lemke${_getSelectedTitle(routeState.route.pathTemplate)}'),
+          title: Text(S.of(context).leo + _getSelectedTitle(routeState.route.pathTemplate)),
           actions: appBarActions(
             context,
             colorSelected,

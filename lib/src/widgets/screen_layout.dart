@@ -1,10 +1,10 @@
-import 'dart:math';
 import 'package:flutter/material.dart';
 
 import '../widgets.dart';
 
 class ScreenLayout extends StatelessWidget {
   final String title;
+  final bool showAppBar;
   final String? subtitle;
   final String? backgroundImage;
   final String? appIcon;
@@ -16,6 +16,7 @@ class ScreenLayout extends StatelessWidget {
   const ScreenLayout({
     Key? key,
     required this.title,
+    this.showAppBar = true,
     this.subtitle,
     this.backgroundImage,
     this.appIcon,
@@ -26,47 +27,34 @@ class ScreenLayout extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var size = MediaQuery.of(context).size;
-    var padding = (size.width - maxWidth) / 2;
     return Scaffold(
-      appBar: AppBar(
-        title: Text(title),
-      ),
+      appBar: showAppBar
+          ? AppBar(
+              title: Text(title),
+            )
+          : null,
       body: CustomScrollView(
         slivers: [
-          if (backgroundImage != null) SliverBanner(
-            title: title,
-            subtitle: subtitle,
-            backgroundImage: backgroundImage!,
-            appIcon: appIcon,
-            playStoreLink: playStoreLink,
-          ) else SliverToBoxAdapter(
-            child: Padding(
-              padding: EdgeInsets.symmetric(horizontal: max(padding, 16)),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    title,
-                    style: Theme.of(context).textTheme.headlineLarge?.copyWith(
-                      color: Theme.of(context).colorScheme.secondary,
-                    ),
-                  ),
-                  if (subtitle != null) Text(
-                    subtitle!,
-                    style: Theme.of(context).textTheme.headlineSmall?.copyWith(
-                      color: Theme.of(context).colorScheme.primary,
-                    ),
-                  ),
-                  const SizedBox(height: 30)
-                ],
-              ),
+          if (backgroundImage != null)
+            SliverBanner(
+              title: title,
+              subtitle: subtitle,
+              backgroundImage: backgroundImage!,
+              appIcon: appIcon,
+              playStoreLink: playStoreLink,
             ),
-          ),
           SliverPadding(
-            padding: EdgeInsets.symmetric(horizontal: max(padding, 16), vertical: 16),
-            sliver: SliverList(
-              delegate: SliverChildListDelegate(childs),
+            padding: const EdgeInsets.symmetric(horizontal: 16),
+            sliver: SliverToBoxAdapter(
+              child: Center(
+                child: ConstrainedBox(
+                  constraints: BoxConstraints(maxWidth: maxWidth),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: childs,
+                  ),
+                ),
+              ),
             ),
           ),
         ],

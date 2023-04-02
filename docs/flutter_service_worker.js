@@ -4,7 +4,7 @@ const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
   "404.html": "1f2f1eb37cb6cdb75ceed70b02d0393d",
-"assets/AssetManifest.json": "3c3c3ac5ebdf1b10997168444fbf9acb",
+"assets/AssetManifest.json": "ab15fb6737384a12f3ed1531191f1019",
 "assets/FontManifest.json": "dc3d03800ccca4601324923c0b1d6d57",
 "assets/fonts/MaterialIcons-Regular.otf": "e7069dfd19b331be16bed984668fe080",
 "assets/images/about/me.jpg": "327b3fc65b1f68b7c7472a9c3626c57f",
@@ -58,6 +58,7 @@ const RESOURCES = {
 "assets/images/apps/oneUI/OneUIBanner.jpg": "4f8fd082e1a8e95330f803c0a817d764",
 "assets/images/apps/oneUI/OneUILogo.png": "37e7e1a8b67fd0e913b8d38d09cf17e2",
 "assets/images/apps/studiportal/app_icon.png": "52197e869a4403fd2ae7ecdbaef38e2f",
+"assets/images/apps/studiportal/expanding_app_bar.gif": "e040ee62424be474181e6bc360cb867b",
 "assets/images/apps/studiportal/expanding_app_bar.mp4": "be35a26fd693fd12d2a00c23b7bcb633",
 "assets/images/apps/studiportal/material_home_blue.png": "f7203c5caca8e337002ff837129cb81c",
 "assets/images/apps/studiportal/material_home_green.png": "a20b137376e990b99ed36d5f82c33c34",
@@ -87,6 +88,7 @@ const RESOURCES = {
 "assets/images/apps/studiportal/Vorstellungsgrafik.png": "34cea04763295b5332142dc46fabd746",
 "assets/images/apps/sudoku/app_icon.png": "f0f1f41c8f745576714a96bb48dcbb17",
 "assets/images/apps/sudoku/daily.png": "92d979dcde8f854555033bc8bf33c196",
+"assets/images/apps/sudoku/expanding_app_bar.gif": "a582fa24f8e140bbf9006abd61bfa07c",
 "assets/images/apps/sudoku/expanding_app_bar.mp4": "2fcc8c35a015e418aeaa37dbc291744d",
 "assets/images/apps/sudoku/level.png": "88e1b82a494a154e044cea6ab923dcdf",
 "assets/images/apps/sudoku/material_home_blue.png": "f7203c5caca8e337002ff837129cb81c",
@@ -161,9 +163,9 @@ const RESOURCES = {
 "icons/icon-512.png": "cdd688288d8e223bfc8c775c6f80303c",
 "icons/Icon-maskable-192.png": "a294f388689c3c02cec94f7ba18c7012",
 "icons/Icon-maskable-512.png": "cdd688288d8e223bfc8c775c6f80303c",
-"index.html": "f727f313e235c6abcfd34721e2c88c4d",
-"/": "f727f313e235c6abcfd34721e2c88c4d",
-"main.dart.js": "72954506fcedc723e06b52f0a654a005",
+"index.html": "1ef32c00cab112d85d1130e42682af68",
+"/": "1ef32c00cab112d85d1130e42682af68",
+"main.dart.js": "f78b28aa98e47e23e8efcd33417e11c8",
 "manifest.json": "383bcada50b6d5b56736595c7588470c",
 "version.json": "009c9e65172e010890f7f65fde438006"
 };
