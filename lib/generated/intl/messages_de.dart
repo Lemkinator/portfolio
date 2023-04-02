@@ -127,6 +127,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Passt auf, Kinder! Das macht die Ehe mit euch..."),
         "lightUtopiaSubtitle":
             MessageLookupByLibrary.simpleMessage("In Memoriam\nRS3"),
+        "links": MessageLookupByLibrary.simpleMessage("Links"),
         "media": MessageLookupByLibrary.simpleMessage("Media"),
         "myDescription": MessageLookupByLibrary.simpleMessage(
             "Hallo, mein Name ist Leonard. Neben meiner Leidenschaft für Technik, Smartphones, Android und Computerspiele, programmiere ich gerne Apps für Android im OneUI-Stil oder bearbeite Videos, die ich mit meiner Racing-Drohne aufnehme."),

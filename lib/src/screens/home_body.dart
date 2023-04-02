@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/src/screens/explore.dart';
 
+import '../screens.dart';
 import '../routing.dart';
-import 'about.dart';
 import '../widgets/fade_transition_page.dart';
-import 'projects.dart';
 
 /// Displays the contents of the body of [HomeScaffold]
 class HomeScaffoldBody extends StatelessWidget {

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_carousel_slider/carousel_slider.dart';
-import 'package:portfolio/src/widgets.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+import '../widgets.dart';
 import '../localization.dart';
 import '../routing.dart';
 

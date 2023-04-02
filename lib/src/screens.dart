@@ -5,3 +5,6 @@ export 'screens/studiportal.dart';
 export 'screens/sudoku.dart';
 export 'screens/media.dart';
 export 'screens/apps.dart';
+export 'screens/about.dart';
+export 'screens/projects.dart';
+export 'screens/explore.dart';
