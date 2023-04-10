@@ -13,23 +13,19 @@ class ProjectGrid extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
     return SliverPadding(
-    padding: const EdgeInsets.only(left: 16),
-    sliver: SliverGrid(
-      gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
-        maxCrossAxisExtent: 400,
-        childAspectRatio: 1,
-      ),
-      delegate: SliverChildBuilderDelegate(
-        (context, index) => ProjectCard(
-          project: projects[index],
-          onTap: (project) => RouteStateScope.of(context).go(project.route)
+      padding: const EdgeInsets.only(left: 16),
+      sliver: SliverGrid(
+        gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
+          maxCrossAxisExtent: 400,
+          childAspectRatio: 1,
         ),
-        childCount: projects.length,
+        delegate: SliverChildBuilderDelegate(
+          (context, index) => ProjectCard(project: projects[index], onTap: (project) => RouteStateScope.of(context).go(project.route)),
+          childCount: projects.length,
+        ),
       ),
-    ),
-  );
+    );
   }
 }
 
@@ -83,11 +79,16 @@ class ProjectCard extends StatelessWidget {
                   children: [
                     Text(
                       project.title,
-                      style: Theme.of(context).textTheme.headlineLarge,
+                      //white text
+                      style: Theme.of(context).textTheme.headlineLarge?.copyWith(
+                            color: Colors.white,
+                          ),
                     ),
                     Text(
                       project.description,
-                      style: Theme.of(context).textTheme.bodyLarge,
+                      style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+                            color: Colors.white,
+                          ),
                     ),
                   ],
                 ),

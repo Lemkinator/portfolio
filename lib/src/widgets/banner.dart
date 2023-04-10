@@ -57,15 +57,16 @@ class SliverBanner extends StatelessWidget {
                           Text(
                             title,
                             style: Theme.of(context).textTheme.displayLarge?.copyWith(
-                                  color: Theme.of(context).colorScheme.secondary,
+                                  color: Colors.white,
                                 ),
                           ),
-                          if (subtitle != null) Text(
-                            subtitle!,
-                            style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                                  color: Theme.of(context).colorScheme.secondary,
-                                ),
-                          ),
+                          if (subtitle != null)
+                            Text(
+                              subtitle!,
+                              style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+                                    color: Colors.white,
+                                  ),
+                            ),
                           if (appIcon != null || playStoreLink != null) const SizedBox(height: 20),
                           if (appIcon != null || playStoreLink != null)
                             Row(
