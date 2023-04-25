@@ -4,7 +4,7 @@ const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
   "404.html": "1f2f1eb37cb6cdb75ceed70b02d0393d",
-"assets/AssetManifest.json": "ab15fb6737384a12f3ed1531191f1019",
+"assets/AssetManifest.json": "bfae5d0618a4e35f8f0afce0a90833d6",
 "assets/FontManifest.json": "dc3d03800ccca4601324923c0b1d6d57",
 "assets/fonts/MaterialIcons-Regular.otf": "e7069dfd19b331be16bed984668fe080",
 "assets/images/about/me.jpg": "327b3fc65b1f68b7c7472a9c3626c57f",
@@ -14,6 +14,7 @@ const RESOURCES = {
 "assets/images/apps/google-play-badge-de.png": "7e2066c8302de54f8fee432d143a4cc1",
 "assets/images/apps/google-play-badge-en.png": "1e91d02cf5a902f38f2923c006d79281",
 "assets/images/apps/nakbuch/app_icon.jpg": "bc8fa059a5e26537091329113f4ebd6d",
+"assets/images/apps/nakbuch/app_icon.png": "a30e4f3d58b8a9d517bd553a043ee87e",
 "assets/images/apps/nakbuch/data_tab.gif": "484e8d8eb0bc0a4890682571f1e45ac7",
 "assets/images/apps/nakbuch/data_tab.mp4": "7e5e51fcebd858d1b4add05effee0f43",
 "assets/images/apps/nakbuch/expanding_app_bar.gif": "9c3629b44fc5fcc584b7b4a5f45453e2",
@@ -163,9 +164,9 @@ const RESOURCES = {
 "icons/icon-512.png": "cdd688288d8e223bfc8c775c6f80303c",
 "icons/Icon-maskable-192.png": "a294f388689c3c02cec94f7ba18c7012",
 "icons/Icon-maskable-512.png": "cdd688288d8e223bfc8c775c6f80303c",
-"index.html": "bd1273303e81e14be59f2a59a11a7929",
-"/": "bd1273303e81e14be59f2a59a11a7929",
-"main.dart.js": "5000c310b1e0a65cd59b1bd2e654ea3a",
+"index.html": "962f4ad274cd9486174b3a3add17020c",
+"/": "962f4ad274cd9486174b3a3add17020c",
+"main.dart.js": "22644804ae1c3462c00c3bfc7aa4b987",
 "manifest.json": "383bcada50b6d5b56736595c7588470c",
 "version.json": "009c9e65172e010890f7f65fde438006"
 };
