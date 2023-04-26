@@ -4,7 +4,7 @@ const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
   "404.html": "1f2f1eb37cb6cdb75ceed70b02d0393d",
-"assets/AssetManifest.json": "ab15fb6737384a12f3ed1531191f1019",
+"assets/AssetManifest.json": "ce000b406879e6cafe93f3c64537e4ad",
 "assets/FontManifest.json": "dc3d03800ccca4601324923c0b1d6d57",
 "assets/fonts/MaterialIcons-Regular.otf": "e7069dfd19b331be16bed984668fe080",
 "assets/images/about/me.jpg": "327b3fc65b1f68b7c7472a9c3626c57f",
@@ -13,7 +13,7 @@ const RESOURCES = {
 "assets/images/about/me3.jpg": "ee56a0aa7fd3ee29e103f163e164484d",
 "assets/images/apps/google-play-badge-de.png": "7e2066c8302de54f8fee432d143a4cc1",
 "assets/images/apps/google-play-badge-en.png": "1e91d02cf5a902f38f2923c006d79281",
-"assets/images/apps/nakbuch/app_icon.jpg": "bc8fa059a5e26537091329113f4ebd6d",
+"assets/images/apps/nakbuch/app_icon.png": "a30e4f3d58b8a9d517bd553a043ee87e",
 "assets/images/apps/nakbuch/data_tab.gif": "484e8d8eb0bc0a4890682571f1e45ac7",
 "assets/images/apps/nakbuch/data_tab.mp4": "7e5e51fcebd858d1b4add05effee0f43",
 "assets/images/apps/nakbuch/expanding_app_bar.gif": "9c3629b44fc5fcc584b7b4a5f45453e2",
@@ -163,10 +163,16 @@ const RESOURCES = {
 "icons/icon-512.png": "cdd688288d8e223bfc8c775c6f80303c",
 "icons/Icon-maskable-192.png": "a294f388689c3c02cec94f7ba18c7012",
 "icons/Icon-maskable-512.png": "cdd688288d8e223bfc8c775c6f80303c",
-"index.html": "ee68637d618d8ad03230c307e6e60f30",
-"/": "ee68637d618d8ad03230c307e6e60f30",
-"main.dart.js": "5000c310b1e0a65cd59b1bd2e654ea3a",
-"manifest.json": "383bcada50b6d5b56736595c7588470c",
+"index.html": "0c5d8b275d2081824046a155fa9905d8",
+"/": "0c5d8b275d2081824046a155fa9905d8",
+"main.dart.js": "04dcd43c712d01299f7a832d6afec92b",
+"manifest.json": "8df6dd194fa86e32181a0383e137c2df",
+"screenshots/screenshot1_narrow.png": "2a400c4c7afe20d01bd3284e46fa4562",
+"screenshots/screenshot1_wide.png": "76ca32c484aaf208e711e5246f4205c2",
+"screenshots/screenshot2_narrow.png": "087d83225f86dc90d44e6bb00ee33e8a",
+"screenshots/screenshot2_wide.png": "7ec99d6c8c25210d34a91997e275d62f",
+"screenshots/screenshot3_narrow.png": "793db24199ca89938125ad1d9d599d97",
+"screenshots/screenshot3_wide.png": "e39e66e7054e67fc7a01fe49e857acab",
 "version.json": "009c9e65172e010890f7f65fde438006"
 };
 

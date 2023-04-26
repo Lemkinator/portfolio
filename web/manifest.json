@@ -1,6 +1,6 @@
 {
-    "name": "portfolio",
-    "short_name": "portfolio",
+    "name": "Leonard Lemke",
+    "short_name": "Leonard Lemke",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
@@ -8,6 +8,51 @@
     "description": "My Portfolio.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
+    "screenshots": [
+        {
+            "src": "screenshots/screenshot1_narrow.png",
+            "sizes": "450x900",
+            "type": "image/png",
+            "form_factor": "narrow",
+            "label": "Explore"
+        },
+        {
+            "src": "screenshots/screenshot2_narrow.png",
+            "sizes": "450x900",
+            "type": "image/png",
+            "form_factor": "narrow",
+            "label": "Apps"
+        },
+        {
+            "src": "screenshots/screenshot3_narrow.png",
+            "sizes": "450x900",
+            "type": "image/png",
+            "form_factor": "narrow",
+            "label": "Media"
+        },
+        {
+            "src": "screenshots/screenshot1_wide.png",
+            "sizes": "900x1600",
+            "type": "image/png",
+            "form_factor": "wide",
+            "label": "Explore"
+        },
+        {
+            "src": "screenshots/screenshot2_wide.png",
+            "sizes": "900x1600",
+            "type": "image/png",
+            "form_factor": "wide",
+            "label": "Apps"
+        },
+        {
+            "src": "screenshots/screenshot3_wide.png",
+            "sizes": "900x1600",
+            "type": "image/png",
+            "form_factor": "wide",
+            "label": "Media"
+        }
+
+    ],
     "icons": [
         {
             "src": "icons/Icon-192.png",
