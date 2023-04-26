@@ -37,7 +37,7 @@ final libraryInstance = Library()
     category: 'apps',
     title: S.current.nakBuch,
     description: S.current.nakBuchDescription,
-    image: 'images/apps/nakbuch/app_icon.jpg',
+    image: 'images/apps/nakbuch/app_icon.png',
     route: '/apps/nakbuch',
     tags: [S.current.apps, S.current.oneUi],
     date: DateTime(2021, 11),
