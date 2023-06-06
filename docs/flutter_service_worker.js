@@ -2,11 +2,12 @@
 const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
-const RESOURCES = {
-  "404.html": "1f2f1eb37cb6cdb75ceed70b02d0393d",
-"assets/AssetManifest.json": "ce000b406879e6cafe93f3c64537e4ad",
+
+const RESOURCES = {"404.html": "1f2f1eb37cb6cdb75ceed70b02d0393d",
+"assets/AssetManifest.json": "7ae39b00be4d6a1dbc1457db43b76b84",
+"assets/AssetManifest.smcbin": "6ed12543b73e588f9f4885a7fdae107b",
 "assets/FontManifest.json": "dc3d03800ccca4601324923c0b1d6d57",
-"assets/fonts/MaterialIcons-Regular.otf": "e7069dfd19b331be16bed984668fe080",
+"assets/fonts/MaterialIcons-Regular.otf": "19a06ca2815ef6eb6c988bc1abc97405",
 "assets/images/about/me.jpg": "327b3fc65b1f68b7c7472a9c3626c57f",
 "assets/images/about/me1.jpg": "1001c73d2672d8ad5dc063e3d4afcff2",
 "assets/images/about/me2.jpg": "093130fb555afee03b4384b3f97ebc3f",
@@ -15,44 +16,41 @@ const RESOURCES = {
 "assets/images/apps/google-play-badge-en.png": "1e91d02cf5a902f38f2923c006d79281",
 "assets/images/apps/nakbuch/app_icon.png": "a30e4f3d58b8a9d517bd553a043ee87e",
 "assets/images/apps/nakbuch/data_tab.gif": "484e8d8eb0bc0a4890682571f1e45ac7",
-"assets/images/apps/nakbuch/data_tab.mp4": "7e5e51fcebd858d1b4add05effee0f43",
 "assets/images/apps/nakbuch/expanding_app_bar.gif": "9c3629b44fc5fcc584b7b4a5f45453e2",
-"assets/images/apps/nakbuch/expanding_app_bar.mp4": "10d2079379db94dbdc6ff9994f6c639b",
 "assets/images/apps/nakbuch/material_home_blue.png": "f7203c5caca8e337002ff837129cb81c",
 "assets/images/apps/nakbuch/material_home_green.png": "a20b137376e990b99ed36d5f82c33c34",
 "assets/images/apps/nakbuch/material_home_red.png": "af15650b9442de413520e5a73230d534",
-"assets/images/apps/nakbuch/material_nakbuch_blue.png": "d853183a0fdd530e222da01027a336d0",
-"assets/images/apps/nakbuch/material_nakbuch_green.png": "6f30855b2978e37d0911b20960f6c321",
-"assets/images/apps/nakbuch/material_nakbuch_red.png": "b764b313c6dff05d40426558d64f36e6",
-"assets/images/apps/nakbuch/mobile1.png": "583c6d1d9d63d4783a4812fbbdee0fee",
-"assets/images/apps/nakbuch/mobile1_light.png": "1e150b98c495e96794794ada51cb997b",
-"assets/images/apps/nakbuch/mobile2.png": "d49619a5cac3b2ad4808111f5ec91fe6",
-"assets/images/apps/nakbuch/mobile2_light.png": "904de96dc57d32ddfcf9814795baafc5",
-"assets/images/apps/nakbuch/mobile3.png": "45d48b5611df231997b41dd06b5d664b",
-"assets/images/apps/nakbuch/mobile3_light.png": "389f27ae5403f13a0db646b01990fdc4",
-"assets/images/apps/nakbuch/mobile4.png": "11eee07cf7f7655a8b734733618154ea",
-"assets/images/apps/nakbuch/mobile4_light.png": "de478e1c01929b48bfe4922d297ad0fe",
-"assets/images/apps/nakbuch/mobile5.png": "ec63c87d1b6b4048f50b05930cf86d42",
-"assets/images/apps/nakbuch/mobile5_light.png": "a7d1dc1b826589dcada2def937de30ae",
-"assets/images/apps/nakbuch/mobile6.png": "f62fedb6e8a6bd5253f50cc552d53fd5",
-"assets/images/apps/nakbuch/mobile6_light.png": "b82ff4167cb835584354c5bdb08504f6",
+"assets/images/apps/nakbuch/material_nakbuch_blue.png": "598e0d7ce91bbfac904b69c42b48383b",
+"assets/images/apps/nakbuch/material_nakbuch_green.png": "715b821f1ec3c07b3c9471b6f7b03327",
+"assets/images/apps/nakbuch/material_nakbuch_red.png": "1870af7a47470f0899363a204e951d61",
+"assets/images/apps/nakbuch/mobile1.png": "be2dcd5c592b142bd2999e0a8a2b9220",
+"assets/images/apps/nakbuch/mobile1_light.png": "7d8e5d78a8437506227cc13859dbcd24",
+"assets/images/apps/nakbuch/mobile2.png": "e00ad2da5adbf35fdd5fca5da22c4af7",
+"assets/images/apps/nakbuch/mobile2_light.png": "7bd034ec662ce11899efa7216c9e3548",
+"assets/images/apps/nakbuch/mobile3.png": "bdfa3a9f3642c90911acb78ed4a89463",
+"assets/images/apps/nakbuch/mobile3_light.png": "b1400254062884c9b8c204531e94c67d",
+"assets/images/apps/nakbuch/mobile4.png": "8a8ce53b7ddca64abf404e34d8985f49",
+"assets/images/apps/nakbuch/mobile4_light.png": "158cb421c7689488f4845a011c0858f6",
+"assets/images/apps/nakbuch/mobile5.png": "c8291ae22cf7e5c5d8cc8153cfb01825",
+"assets/images/apps/nakbuch/mobile5_light.png": "07532018b5da0f161ff2680e110eb1b5",
+"assets/images/apps/nakbuch/mobile6.png": "ee80d2ab2f335dbea77133f0b249ab1f",
+"assets/images/apps/nakbuch/mobile6_light.png": "e4f6e2bfedfbe11b9848952bd05308ac",
 "assets/images/apps/nakbuch/NAK_Buch_squircle.png": "e86f2fc79e379b5897e963c7cbb7ef72",
-"assets/images/apps/nakbuch/quick_actions.png": "87a40ffed51d83fe8f0244274506607b",
-"assets/images/apps/nakbuch/shortcut.png": "201cfc1aab11ba3292af2af0d05e2abb",
+"assets/images/apps/nakbuch/quick_actions.png": "76c4454b205f666d1304748707a884e8",
+"assets/images/apps/nakbuch/shortcut.png": "812f1ad2bfde5bc344817ab325d77aaf",
 "assets/images/apps/nakbuch/swipe_gesture.gif": "ed69ae8559783f6e85818d4c90aa9f94",
-"assets/images/apps/nakbuch/swipe_gesture.mp4": "f69afa4d723d5c709b110a92daf1c8ba",
-"assets/images/apps/nakbuch/tab1.png": "af3c84990812605b517fcfc7fba04922",
-"assets/images/apps/nakbuch/tab1_light.png": "dc48e471d713b2b9e47b28f53e731efd",
-"assets/images/apps/nakbuch/tab2.png": "009bd8aa160e4297cc6abd40df89f4f4",
-"assets/images/apps/nakbuch/tab2_light.png": "06e30abe2cc6e3e81b4919126aa5e818",
-"assets/images/apps/nakbuch/tab3.png": "e9cae5b70c3686d5f6050d034026ef36",
-"assets/images/apps/nakbuch/tab3_light.png": "ad7b6ddda47dc4425d69ce732e39ff7a",
-"assets/images/apps/nakbuch/tab4.png": "041f98c68682fb9a7a4663a4db58e3b7",
-"assets/images/apps/nakbuch/tab4_light.png": "a1cd61ec49cfe5c8e5b95c6a239bf91c",
-"assets/images/apps/nakbuch/Vorstellungsgrafik.png": "6095e5deea848ba77a7add514948ca97",
+"assets/images/apps/nakbuch/tab1.png": "fb8af02f671be2f823cb521b4e24c7b1",
+"assets/images/apps/nakbuch/tab1_light.png": "0ae42439a10ff9e1ff942d7b2b6c0080",
+"assets/images/apps/nakbuch/tab2.png": "56bbd818475299d611cf1b3bdff091be",
+"assets/images/apps/nakbuch/tab2_light.png": "998d57494df1f986beffd8d69a18364e",
+"assets/images/apps/nakbuch/tab3.png": "80b1ad3b8529321ba84b2ab79496d1c8",
+"assets/images/apps/nakbuch/tab3_light.png": "2e8d08a3729328012abc50144e149d78",
+"assets/images/apps/nakbuch/tab4.png": "d758c319d61d7c0c51653a5a574c7b5f",
+"assets/images/apps/nakbuch/tab4_light.png": "4ac63b54ba0c3f06775860e30dccc35d",
+"assets/images/apps/nakbuch/Vorstellungsgrafik.png": "bab0c74ba50a2d4f8013c259bd7e64a8",
 "assets/images/apps/nakbuch/wear1.png": "7951c28ffb6f95d5fe1a7593266088ba",
 "assets/images/apps/nakbuch/wear2.png": "16063aabb572911847f0afd1236d0f1d",
-"assets/images/apps/nakbuch/wear3.png": "c86d88fcb2ce758a1751b3cda7d78fba",
+"assets/images/apps/nakbuch/wear3.png": "1bf262fc918731715b96a1dbfd5f3a55",
 "assets/images/apps/nakbuch/wear4.png": "537704387779619f8d5c82ad0ec263f8",
 "assets/images/apps/oneUI/OneUI.jpg": "a3e838f6931cd09f6955fb8dbe9eed03",
 "assets/images/apps/oneUI/OneUIBanner.jpg": "4f8fd082e1a8e95330f803c0a817d764",
@@ -149,23 +147,29 @@ const RESOURCES = {
 "assets/images/media/light-utopia/light_utopia3.gif": "d17d4a8189f6ac744ef6475f6d8f46ef",
 "assets/images/media/light-utopia/light_utopia4.gif": "68676be5d624718cb8517721bd5857b4",
 "assets/images/media/protek_25.jpg": "1c2a83e78be91397b984af8031ab0b73",
-"assets/NOTICES": "5d378c54bf90bb3ff055cae2fe2d06ed",
-"assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "6d342eb68f170c97609e9da345464e5e",
+"assets/NOTICES": "e03c69f2ca5a445119dbc37354fa68cd",
+"assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "57d849d738900cfd590e9adc7e208250",
 "assets/packages/youtube_player_iframe/assets/player.html": "dc7a0426386dc6fd0e4187079900aea8",
-"canvaskit/canvaskit.js": "97937cb4c2c2073c968525a3e08c86a3",
-"canvaskit/canvaskit.wasm": "3de12d898ec208a5f31362cc00f09b9e",
+"assets/shaders/ink_sparkle.frag": "f8b80e740d33eb157090be4e995febdf",
+"canvaskit/canvaskit.js": "76f7d822f42397160c5dfc69cbc9b2de",
+"canvaskit/canvaskit.wasm": "f48eaf57cada79163ec6dec7929486ea",
+"canvaskit/chromium/canvaskit.js": "8c8392ce4a4364cbb240aa09b5652e05",
+"canvaskit/chromium/canvaskit.wasm": "fc18c3010856029414b70cae1afc5cd9",
 "canvaskit/profiling/canvaskit.js": "c21852696bc1cc82e8894d851c01921a",
 "canvaskit/profiling/canvaskit.wasm": "371bc4e204443b0d5e774d64a046eb99",
+"canvaskit/skwasm.js": "1df4d741f441fa1a4d10530ced463ef8",
+"canvaskit/skwasm.wasm": "6711032e17bf49924b2b001cef0d3ea3",
+"canvaskit/skwasm.worker.js": "19659053a277272607529ef87acf9d8a",
 "CNAME": "b0f133b06fd01fc94aebc7938491f7f1",
 "favicon.png": "965f23b2c4bae7877761bb7c7595af79",
-"flutter.js": "a85fcf6324d3c4d3ae3be1ae4931e9c5",
+"flutter.js": "6b515e434cea20006b3ef1726d2c8894",
 "icons/Icon-192.png": "a294f388689c3c02cec94f7ba18c7012",
 "icons/icon-512.png": "cdd688288d8e223bfc8c775c6f80303c",
 "icons/Icon-maskable-192.png": "a294f388689c3c02cec94f7ba18c7012",
 "icons/Icon-maskable-512.png": "cdd688288d8e223bfc8c775c6f80303c",
-"index.html": "0c5d8b275d2081824046a155fa9905d8",
-"/": "0c5d8b275d2081824046a155fa9905d8",
-"main.dart.js": "04dcd43c712d01299f7a832d6afec92b",
+"index.html": "8801f8e8aac27d4fefa638951367a363",
+"/": "8801f8e8aac27d4fefa638951367a363",
+"main.dart.js": "f781cd0f43dc8a61a7b6b08dc6871eb7",
 "manifest.json": "8df6dd194fa86e32181a0383e137c2df",
 "screenshots/screenshot1_narrow.png": "2a400c4c7afe20d01bd3284e46fa4562",
 "screenshots/screenshot1_wide.png": "76ca32c484aaf208e711e5246f4205c2",
@@ -173,16 +177,14 @@ const RESOURCES = {
 "screenshots/screenshot2_wide.png": "7ec99d6c8c25210d34a91997e275d62f",
 "screenshots/screenshot3_narrow.png": "793db24199ca89938125ad1d9d599d97",
 "screenshots/screenshot3_wide.png": "e39e66e7054e67fc7a01fe49e857acab",
-"version.json": "009c9e65172e010890f7f65fde438006"
-};
-
+"version.json": "009c9e65172e010890f7f65fde438006"};
 // The application shell files that are downloaded before a service worker can
 // start.
-const CORE = [
-  "main.dart.js",
+const CORE = ["main.dart.js",
 "index.html",
 "assets/AssetManifest.json",
 "assets/FontManifest.json"];
+
 // During install, the TEMP cache is populated with the application shell files.
 self.addEventListener("install", (event) => {
   self.skipWaiting();
@@ -193,7 +195,6 @@ self.addEventListener("install", (event) => {
     })
   );
 });
-
 // During activate, the cache is populated with the temp files downloaded in
 // install. If this service worker is upgrading from one with a saved
 // MANIFEST, then use this to retain unchanged resource files.
@@ -215,6 +216,8 @@ self.addEventListener("activate", function(event) {
         await caches.delete(TEMP);
         // Save the manifest to make future upgrades efficient.
         await manifestCache.put('manifest', new Response(JSON.stringify(RESOURCES)));
+        // Claim client to enable caching on first launch
+        self.clients.claim();
         return;
       }
       var oldManifest = await manifest.json();
@@ -240,6 +243,8 @@ self.addEventListener("activate", function(event) {
       await caches.delete(TEMP);
       // Save the manifest to make future upgrades efficient.
       await manifestCache.put('manifest', new Response(JSON.stringify(RESOURCES)));
+      // Claim client to enable caching on first launch
+      self.clients.claim();
       return;
     } catch (err) {
       // On an unhandled exception the state of the cache cannot be guaranteed.
@@ -250,7 +255,6 @@ self.addEventListener("activate", function(event) {
     }
   }());
 });
-
 // The fetch handler redirects requests for RESOURCE files to the service
 // worker cache.
 self.addEventListener("fetch", (event) => {
@@ -290,7 +294,6 @@ self.addEventListener("fetch", (event) => {
     })
   );
 });
-
 self.addEventListener('message', (event) => {
   // SkipWaiting can be used to immediately activate a waiting service worker.
   // This will also require a page refresh triggered by the main worker.
@@ -303,7 +306,6 @@ self.addEventListener('message', (event) => {
     return;
   }
 });
-
 // Download offline will check the RESOURCES for all files not in the cache
 // and populate them.
 async function downloadOffline() {
@@ -324,7 +326,6 @@ async function downloadOffline() {
   }
   return contentCache.addAll(resources);
 }
-
 // Attempt to download the resource online before falling back to
 // the offline cache.
 function onlineFirst(event) {
