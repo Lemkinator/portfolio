@@ -880,10 +880,10 @@ class S {
     );
   }
 
-  /// `Chorbuch (206 of 462 songs)`
+  /// `Chorbuch (207 of 462 songs)`
   String get nakBuchDisclaimer2 {
     return Intl.message(
-      'Chorbuch (206 of 462 songs)',
+      'Chorbuch (207 of 462 songs)',
       name: 'nakBuchDisclaimer2',
       desc: '',
       args: [],
