@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
 import 'localization.dart';
@@ -27,7 +26,7 @@ class _HomeState extends State<Home> {
   bool get useLightMode {
     switch (themeMode) {
       case ThemeMode.system:
-        return SchedulerBinding.instance.window.platformBrightness == Brightness.light;
+        return WidgetsBinding.instance.platformDispatcher.platformBrightness == Brightness.light;
       case ThemeMode.light:
         return true;
       case ThemeMode.dark:
@@ -65,7 +64,6 @@ class _HomeState extends State<Home> {
         '/media/accelerate',
         '/media/light-utopia',
         '/impressum',
-        //'/author/:authorId',
       ],
       initialRoute: '/',
     );
