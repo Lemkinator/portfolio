@@ -150,7 +150,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "nakBuchDisclaimer1": MessageLookupByLibrary.simpleMessage(
             "Gesangbuch (320 von 438 Liedern)"),
         "nakBuchDisclaimer2": MessageLookupByLibrary.simpleMessage(
-            "Chorbuch (206 von 462 Liedern)"),
+            "Chorbuch (207 von 462 Liedern)"),
         "nakBuchDisclaimer3": MessageLookupByLibrary.simpleMessage(
             "Jugendliederbuch (41 von 102 Liedern)"),
         "nakBuchDisclaimer4": MessageLookupByLibrary.simpleMessage(
